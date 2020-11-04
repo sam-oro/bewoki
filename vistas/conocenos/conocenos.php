@@ -16,14 +16,14 @@
 <!-- Font Awesome -->
 <script src="https://kit.fontawesome.com/f599362e7b.js" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="../css/estilos.css">
+<link rel="stylesheet" href="../../css/estilos.css">
 
 <body>
     <section class="">
         <nav class="navbar navbar-expand-lg navbar-light bg-nav">
             <div class="col-sm-3 text-center">
-                <a class="navbar-brand" href="../index.php">
-                    <img src="../img/logo.png" alt="">
+                <a class="navbar-brand" href="../../index.php">
+                    <img src="../../img/logo.png" alt="">
                 </a>
             </div>
 
