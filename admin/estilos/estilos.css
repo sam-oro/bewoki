@@ -15,3 +15,12 @@
     height: 100vh;
     padding-bottom: 5rem;
 }
+
+@media (max-width: 768px) {
+    #sidebar-container {
+        display: none;
+    }
+    .stat {
+        border: 0;
+    }
+}

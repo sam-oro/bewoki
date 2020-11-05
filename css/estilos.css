@@ -26,18 +26,20 @@ h3 {
 /* Utilidades */
 
 .btn-color {
-    background-color: #0D1440;
+    background-color: #009A37;
     color: #ffffff;
     border: none;
     font-size: 1.3rem;
     padding: 0.3rem 2rem;
     border-radius: 0.5rem;
     margin-top: 1rem;
+    height: 3.5rem;
 }
 
 .btn-color:hover {
     cursor: pointer;
-    background-color: #1438A6;
+    background-color: #08b444;
+    color: #ffffff;
 }
 
 
@@ -219,7 +221,13 @@ nav a:hover {
 /* Estilos de los formularios de administrador*/
 
 #sidebar-container {
-    min-height: 200vh;
+    min-height: 100vh;
+    background-color: #009A37;
+}
+
+#sidebar-container img {
+    margin: 1.5rem 0 1rem 0;
+    width: 10rem;
 }
 
 #sidebar-container .logo {
@@ -227,11 +235,17 @@ nav a:hover {
 }
 
 #sidebar-container .menu {
-    width: 900rem;
+    /* width: 20rem; */
 }
 
-#content {
-    overflow-y: auto;
-    height: 100vh;
-    padding-bottom: 5rem;
+.formularios {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.conten-prin {
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    align-content: center;
 }
