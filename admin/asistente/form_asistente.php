@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>asistente</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="../estilos/estilos.css">
+    <!--importacion boostrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f599362e7b.js" crossorigin="anonymous"></script>
 
     <!-- Ionic icons -->
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 
-    <script src="../js/navbar.js"></script>
+    <link rel="stylesheet" href="../../css/estilos.css">
     
 </head>
     <body>
 
     <div class="d-flex" id="content-wrapper">
         <!-- Sidebar -->
-        <div id="sidebar-container" class="bg-primary col-3">
+        <div id="sidebar-container" class="bg-dark col-3">
             <div class="logo">
                 <h4 class="text-light font-weight-bold mb-0">Templune</h4>
             </div>
@@ -33,7 +38,7 @@
         </div>
 
         <div class="container col-10">
-            <div class="row col-10">
+            <div class="row form-maest col-10">
                 <form action="guardar_asistente.php" method="POST" class="col-10">
                     <div class="form-group">
                         <label>identificacion</label>
