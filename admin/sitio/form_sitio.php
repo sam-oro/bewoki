@@ -11,22 +11,25 @@
 <body>
 
     <div class="container">
-        <form action="guardar_asistente.php" method="POST">
+        <form action="guardar_sitio.php" method="POST">
         <div class="form-group">
             <label>Nombre</label>
             <input type="text" class="form-control" name="nombre">
         </div>
         <div class="form-group">
             <label>telefono</label>
-            <input type="password" class="form-control" name="telefono">
-        </div>
-        <div class="form-group">
-            <label>ubicacion</label>
-            <input type="text" class="form-control" name="ubicacion">
+            <input type="text" class="form-control" name="telefono">
         </div>
         <div class="form-group">
             <label>correo</label>
             <input type="email" class="form-control" name="correo">
+        </div>
+        <div class="form-group">
+            <h3>Ubicacion</h3>
+            <label>Latitud:</label>
+            <input type="text" class="form-control" name="latitud">
+            <label>Longitud:</label>
+            <input type="text" class="form-control" name="longitud">
         </div>
         <button type="submit" class="btn btn-primary">enviar</button>
         </form>

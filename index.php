@@ -97,7 +97,7 @@
 
             $baseDeDatos = obtenerBaseDeDatos();
             $coleccion = $baseDeDatos->video_index;
-            $cursor = $coleccion->find(); // Sin criterio de búsqueda
+            $cursor = $coleccion->find(); // Realiza la busueda del video
 
             foreach ( $cursor as $id => $valor )
             {
@@ -105,6 +105,47 @@
                 echo('<iframe class="video" src="'.$row['Url'].'" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
             }
             ?>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Cambiar Video
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Cambiar Video</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <form action="admin/video_idx/actu_video.php" method="post" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label>Nombre</label>
+                                    <input class="form-control" type="text" name="nombre">
+                                </div>
+                                <fieldset>
+                                <legend>video</legend>
+                                <p>Si inserta el video con un URL no es necesario que seleccione un video desde su dispositivo y viceversa; Si rellena el campo URL y selecciona un archivo desde su dispositivo, se dará prioridad al URL que ingreso primero</p>
+                                <div class="form-group">
+                                    <label>URL Video</label>
+                                    <input class="form-control" type="text" name="url">
+                                </div>
+                                <div class="form-group">
+                                    <label>Seleccionar Video</label>
+                                    <input class="form-control" type="file" name="video">
+                                </div>
+                                </fieldset>
+                                <button type="submit" class="btn btn-primary">enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
         </div>
     </section>
 
