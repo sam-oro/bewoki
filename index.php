@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -87,6 +87,24 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
+        </div>
+    </section>
+    <hr>
+    <section class="video_index">
+        <div class="video_idx">
+            <?php
+            include "admin/conexion/conexion.php";
+
+            $baseDeDatos = obtenerBaseDeDatos();
+            $coleccion = $baseDeDatos->video_index;
+            $cursor = $coleccion->find(); // Sin criterio de búsqueda
+
+            foreach ( $cursor as $id => $valor )
+            {
+                $row=json_decode(json_encode($valor),true);
+                echo('<iframe class="video" src="'.$row['Url'].'" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+            }
+            ?>
         </div>
     </section>
 
