@@ -26,10 +26,9 @@ h3 {
 /* Utilidades */
 
 .btn-color {
-    background-color: #009AC5;
+    background-color: #0D1440;
     color: #ffffff;
     border: none;
-    height: 4rem;
     font-size: 1.3rem;
     padding: 0.3rem 2rem;
     border-radius: 0.5rem;
@@ -38,7 +37,7 @@ h3 {
 
 .btn-color:hover {
     cursor: pointer;
-    background-color: #E13C2D;
+    background-color: #1438A6;
 }
 
 
@@ -105,30 +104,8 @@ nav a:hover {
     }
 }
 
-/* Informate */
 
-.card a {
-    text-decoration: none;
-}
-
-.card-header {
-    color: #4b4b4b;
-}
-
-.bg-info {
-    height: 15rem;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    text-shadow: 3px 3px 1px #00000050;
-}
-
-
-/* Vista general de cartas */
+/* Card - Informate */
 
 .contenedor {
     margin: 0;
@@ -191,36 +168,31 @@ nav a:hover {
     }
 }
 
-.pl{
+.pl {
     margin-top: 1rem;
     display: flex;
 }
 
-.pl-txt{
-    font-size: 2.5rem;
+.pl ul:hover {
+    color: #F4AE0E;
+}
+
+.pl-txt {
+    font-size: 2rem;
     color: #009AC5;
     text-transform: uppercase;
 }
 
-.pl-txt:hover {
-    color: #F4AE0E;
-}
-
-#pl-img{
-    height: 2.3rem;
+#pl-img {
+    height: 1.8rem;
     fill: #009AC5;
 }
-
-#pl-img:hover {
-    fill: #F4AE0E;
-}
-
 
 @media only screen and (max-width: 800px) {
     .pl-txt {
         font-size: 1.6rem;
     }
-    #pl-img{
+    #pl-img {
         height: 1.6rem;
     }
 }
@@ -229,7 +201,7 @@ nav a:hover {
     .pl-txt {
         font-size: 1.3rem;
     }
-    #pl-img{
+    #pl-img {
         height: 1.3rem;
     }
 }
@@ -238,18 +210,28 @@ nav a:hover {
     .pl-txt {
         font-size: 0.9rem;
     }
-    #pl-img{
+    #pl-img {
         height: 0.9rem;
     }
 }
 
-.sbtitle{
-    color: #E13C2D ;
+
+/* Estilos de los formularios de administrador*/
+
+#sidebar-container {
+    min-height: 200vh;
 }
 
-/* MAP */
+#sidebar-container .logo {
+    padding: 0.875rem 1.25rem;
+}
 
-#map {
-	height: 500px;
-    width: 100%;
+#sidebar-container .menu {
+    width: 900rem;
+}
+
+#content {
+    overflow-y: auto;
+    height: 100vh;
+    padding-bottom: 5rem;
 }
