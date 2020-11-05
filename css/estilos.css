@@ -26,9 +26,10 @@ h3 {
 /* Utilidades */
 
 .btn-color {
-    background-color: #0D1440;
+    background-color: #009AC5;
     color: #ffffff;
     border: none;
+    height: 4rem;
     font-size: 1.3rem;
     padding: 0.3rem 2rem;
     border-radius: 0.5rem;
@@ -37,7 +38,7 @@ h3 {
 
 .btn-color:hover {
     cursor: pointer;
-    background-color: #1438A6;
+    background-color: #E13C2D;
 }
 
 
@@ -104,8 +105,30 @@ nav a:hover {
     }
 }
 
+/* Informate */
 
-/* Card - Informate */
+.card a {
+    text-decoration: none;
+}
+
+.card-header {
+    color: #4b4b4b;
+}
+
+.bg-info {
+    height: 15rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-shadow: 3px 3px 1px #00000050;
+}
+
+
+/* Vista general de cartas */
 
 .contenedor {
     margin: 0;
@@ -173,19 +196,23 @@ nav a:hover {
     display: flex;
 }
 
-.pl ul:hover{
-    color:#F4AE0E;
-}
-
 .pl-txt{
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #009AC5;
     text-transform: uppercase;
 }
 
+.pl-txt:hover {
+    color: #F4AE0E;
+}
+
 #pl-img{
-    height: 1.8rem;
+    height: 2.3rem;
     fill: #009AC5;
+}
+
+#pl-img:hover {
+    fill: #F4AE0E;
 }
 
 
@@ -214,4 +241,15 @@ nav a:hover {
     #pl-img{
         height: 0.9rem;
     }
+}
+
+.sbtitle{
+    color: #E13C2D ;
+}
+
+/* MAP */
+
+#map {
+	height: 500px;
+    width: 100%;
 }
