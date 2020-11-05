@@ -11,11 +11,11 @@
     # Acceder a la colección contactos
     $coleccion = $baseDeDatos->Sitio_Turistico;
     $resultado = $coleccion->insertOne([
-        "Nombre" => $nombre , 
-        "Telefono" => $telefono ,
-        "Correo" => $correo,
-        "Latitud" => $latitud ,
-        "Longitud" => $longitud ,
+        "Nom_sitio" => $nombre , 
+        "Tel_sitio" => $telefono ,
+        "Corr_sitio" => $correo,
+        "Lat_sitio" => $latitud ,
+        "Lon_sitio" => $longitud ,
         
     ]);
 ?>
