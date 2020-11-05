@@ -161,3 +161,57 @@ nav a:hover {
         font-size: 1.3rem;
     }
 }
+
+@media only screen and (max-width: 370px) {
+    .title {
+        font-size: 1rem;
+    }
+}
+
+.pl{
+    margin-top: 1rem;
+    display: flex;
+}
+
+.pl ul:hover{
+    color:#F4AE0E;
+}
+
+.pl-txt{
+    font-size: 2rem;
+    color: #009AC5;
+    text-transform: uppercase;
+}
+
+#pl-img{
+    height: 1.8rem;
+    fill: #009AC5;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .pl-txt {
+        font-size: 1.6rem;
+    }
+    #pl-img{
+        height: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .pl-txt {
+        font-size: 1.3rem;
+    }
+    #pl-img{
+        height: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .pl-txt {
+        font-size: 0.9rem;
+    }
+    #pl-img{
+        height: 0.9rem;
+    }
+}
