@@ -45,7 +45,7 @@
                         <a class="nav-link" href="#">Eventos-Tour</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Aliados</a>
+                        <a class="nav-link" href="../aliados/aliados.php">Aliados</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../materialturistico/turistico.php">Material Turistico</a>
