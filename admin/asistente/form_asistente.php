@@ -30,12 +30,12 @@
                 <img src="../../img/isologo-blan.png" alt="">
             </div>
             <div class="menu">
-                <a href="#" class="d-flex text-light p-3 border-0"><i class="icon ion-md-apps lead mr-2"></i><h5 class="m-1 navbar-enlaces">Asistente</h5></a>
-                <a href="#" class="d-flex text-light p-3 border-0"><i class="icon ion-md-people lead mr-2"></i><h5 class="m-1 navbar-enlaces">Usuarios</h5></a>
-                <a href="#" class="d-flex text-light p-3 border-0"><i class="icon ion-md-stats lead mr-2"></i><h5 class="m-1 navbar-enlaces">Estadísticas</h5></a>
-                <a href="#" class="d-flex text-light p-3 border-0"><i class="icon ion-md-person lead mr-2"></i><h5 class="m-1 navbar-enlaces">Perfil</h5></a>
-                <a href="#" class="d-flex text-light p-3 border-0"> <i class="icon ion-md-settings lead mr-2"></i>
-                    <h5 class="m-1 navbar-enlaces">Otros</h5>
+                <a href="form_asistente.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-apps lead mr-2"></i><h5 class="m-1 navbar-enlaces">Asistente</h5></a>
+                <a href="../empleado_guia/form_empleado.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-people lead mr-2"></i><h5 class="m-1 navbar-enlaces">Empleado guia</h5></a>
+                <a href="../organizador_tour/form_organizador.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-stats lead mr-2"></i><h5 class="m-1 navbar-enlaces">organizador</h5></a>
+                <a href="../proveedor/form_proveedor.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-person lead mr-2"></i><h5 class="m-1 navbar-enlaces">proveedor</h5></a>
+                <a href="../sitio/form_sitio.php" class="d-flex text-light p-3 border-0"> <i class="icon ion-md-settings lead mr-2"></i>
+                    <h5 class="m-1 navbar-enlaces">Sitio Turistico</h5>
                 </a>
                 <a href=""></a>
 
@@ -47,7 +47,7 @@
                     <h3>Asistente</h3>
                 </div>
                 <div class="form-group">
-                    <label>identificación</label>
+                    <label>Identificación</label>
                     <input type="text" class="form-control" name="id">
                 </div>
                 <div class="form-group">
