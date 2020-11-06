@@ -30,15 +30,12 @@
                 <img src="../../img/isologo-blan.png" alt="">
             </div>
             <div class="menu">
-                <a href="form_asistente.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-apps lead mr-2"></i><h5 class="m-1 navbar-enlaces">Asistente</h5></a>
-                <a href="../empleado_guia/form_empleado.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-people lead mr-2"></i><h5 class="m-1 navbar-enlaces">Empleado guia</h5></a>
-                <a href="../organizador_tour/form_organizador.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-stats lead mr-2"></i><h5 class="m-1 navbar-enlaces">organizador</h5></a>
-                <a href="../proveedor/form_proveedor.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-person lead mr-2"></i><h5 class="m-1 navbar-enlaces">proveedor</h5></a>
-                <a href="../sitio/form_sitio.php" class="d-flex text-light p-3 border-0"> <i class="icon ion-md-settings lead mr-2"></i>
-                    <h5 class="m-1 navbar-enlaces">Sitio Turistico</h5>
-                </a>
-                <a href=""></a>
-
+                <a href="form_asistente.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-apps lead mr-2" title="Asistente"></i><h5 class="m-1 navbar-enlaces">Asistente</h5></a>
+                <a href="../empleado_guia/form_empleado.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-people lead mr-2" title="Empleado guía"></i><h5 class="m-1 navbar-enlaces">Empleado guía</h5></a>
+                <a href="../organizador_tour/form_organizador.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-stats lead mr-2" title="Organizador"></i><h5 class="m-1 navbar-enlaces">Organizador</h5></a>
+                <a href="../proveedor/form_proveedor.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-person lead mr-2" title="Proveedor"></i><h5 class="m-1 navbar-enlaces">Proveedor</h5></a>
+                <a href="../sitio/form_sitio.php" class="d-flex text-light p-3 border-0"> <i class="icon ion-md-settings lead mr-2" title="Sitio Turistico"></i><h5 class="m-1 navbar-enlaces">Sitio Turistico</h5></a>
+                
             </div>
         </div>
         <div class="container formularios col-9">

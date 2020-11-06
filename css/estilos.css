@@ -34,7 +34,7 @@ hr {
 }
 
 b {
-    border-color: #009AC5;
+    color: #009AC5;
 }
 
 .titulos {
@@ -141,9 +141,14 @@ b {
     border-radius: 0.5rem;
 }
 
-.btn-invi:active,
+.dropdown-item:focus,
+.dropdown-item:hover {
+    color: #F4AE0E !important;
+}
+
+.btn-invi.active,
 .btn-invi:hover {
-    color: #F4AE0E;
+    color: #F4AE0E !important;
 }
 
 nav img {
@@ -174,13 +179,16 @@ nav a:hover {
 /* Footer */
 
 .footer {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #f3f3f3;
     background-color: #ffffff;
     color: #ffffff;
     padding: 2rem;
 }
 
 .redes i {
-    color: #009A37;
+    color: #4b4b4b;
     font-size: 1.5rem;
 }
 
@@ -190,7 +198,7 @@ nav a:hover {
 }
 
 .contach {
-    color: #009A37;
+    color: #4b4b4b;
     text-decoration: none;
 }
 
@@ -200,7 +208,7 @@ nav a:hover {
 }
 
 .copy {
-    color: #08b444;
+    color: #4b4b4b;
 }
 
 
@@ -231,6 +239,9 @@ nav a:hover {
         margin: 1rem 0 1rem 0;
     }
 }
+
+
+/* Material Turistico */
 
 
 /* Card - Informate */
