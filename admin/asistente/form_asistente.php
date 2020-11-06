@@ -30,11 +30,15 @@
                 <img src="../../img/isologo-blan.png" alt="">
             </div>
             <div class="menu">
-                <a href="#" class="d-block text-light p-3 border-0"><i class="icon ion-md-apps lead mr-2"></i> <p class="d-none d-lg-block">asistente</p> </a>
-                <a href="#" class="d-block text-light p-3 border-0"><i class="icon ion-md-people lead mr-2"></i>Usuarios</a>
-                <a href="#" class="d-block text-light p-3 border-0"><i class="icon ion-md-stats lead mr-2"></i>Estadísticas</a>
-                <a href="#" class="d-block text-light p-3 border-0"><i class="icon ion-md-person lead mr-2"></i>Perfil</a>
-                <a href="#" class="d-block text-light p-3 border-0"> <i class="icon ion-md-settings lead mr-2"></i>Configuración</a>
+                <a href="#" class="d-flex text-light p-3 border-0"><i class="icon ion-md-apps lead mr-2"></i><h5 class="m-1 navbar-enlaces">Asistente</h5></a>
+                <a href="#" class="d-flex text-light p-3 border-0"><i class="icon ion-md-people lead mr-2"></i><h5 class="m-1 navbar-enlaces">Usuarios</h5></a>
+                <a href="#" class="d-flex text-light p-3 border-0"><i class="icon ion-md-stats lead mr-2"></i><h5 class="m-1 navbar-enlaces">Estadísticas</h5></a>
+                <a href="#" class="d-flex text-light p-3 border-0"><i class="icon ion-md-person lead mr-2"></i><h5 class="m-1 navbar-enlaces">Perfil</h5></a>
+                <a href="#" class="d-flex text-light p-3 border-0"> <i class="icon ion-md-settings lead mr-2"></i>
+                    <h5 class="m-1 navbar-enlaces">Configuración</h5>
+                </a>
+                <a href=""></a>
+
             </div>
         </div>
         <div class="container formularios col-9">
