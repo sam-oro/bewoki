@@ -18,6 +18,8 @@
 
 <link rel="stylesheet" href="../../css/estilos.css">
 
+<link rel="stylesheet" href="../../css/estilos3.css">
+
 <body>
     <section class="">
         <nav class="navbar navbar-expand-lg navbar-light bg-nav">
@@ -71,7 +73,7 @@
             <div class="row conocenos m-0">
                 <div class="row col-12">
                     <div class="col-md-6 mb-md-5 my-lg-5 text-center">
-                        <img src="../img/iconos-01.svg" alt="">
+                        <img id="somos" src="../../img/iconos-01.svg" alt="">
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <h3 class="mb-md-5 my-lg-3 text-center">¿Quienes Somos?</h3>
@@ -81,7 +83,7 @@
 
                 <div class="row col-12">
                     <div class="col-sm-12 col-md-6 col-sm-12 mb-md-5 my-lg-5 text-center">
-                        <img src="../img/iconos-02.svg" alt="">
+                        <img id="mision" src="../../img/iconos-02.svg" alt="">
                     </div>
                     <div class="col-sm-12 col-md-6 col-sm-12">
                         <h3 class="mb-md-5 my-lg-3 text-center">Misión</h3>
@@ -93,7 +95,7 @@
 
                 <div class="row col-12">
                     <div class="col-sm-12 col-md-6 mb-md-5 my-lg-5 text-center">
-                        <img src="../img/iconos-03.svg" alt="">
+                        <img id="vision" src="../../img/iconos-03.svg" alt="">
                     </div>
                     <div class="col-sm-12 col-md-6">
                         <h3 class="mb-md-5 my-lg-3 text-center">Visión</h3>
