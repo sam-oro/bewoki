@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Aliados</title>
 </head>
 
 <!--importacion boostrap-->
@@ -17,12 +17,13 @@
 <script src="https://kit.fontawesome.com/f599362e7b.js" crossorigin="anonymous"></script>
 
 <link rel="stylesheet" href="../../css/estilos.css">
+<link rel="stylesheet" href="../../css/estilos3.css">
 
 <body>
     <section class="">
         <nav class="navbar navbar-expand-lg navbar-light bg-nav">
             <div class="col-sm-3 text-center">
-                <a class="navbar-brand" href="index.php">
+                <a class="navbar-brand" href="../../index.php">
                     <img src="../../img/logo.png" alt="">
                 </a>
             </div>
@@ -33,13 +34,13 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav hola ml-auto">
                     <li class="nav-item ">
-                        <a class="nav-link" href="index.php">Inicio</span></a>
+                        <a class="nav-link" href="../../index.php">Inicio</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="vistas/conocenos.php">Conócenos</a>
+                        <a class="nav-link" href="../conocenos/conocenos.php">Conócenos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Informate</a>
+                        <a class="nav-link" href="../informate/informate.php">Informate</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Eventos-Tour</a>
@@ -48,7 +49,7 @@
                         <a class="nav-link" href="#">Aliados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Material Turistico</a>
+                        <a class="nav-link" href="../materialturistico/turistico.php">Material Turistico</a>
                     </li>
                     <div class="btn-group">
                         <button type="button" class="btn btn-invi dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
@@ -67,23 +68,42 @@
     </section>
 
     <section>
-        <div class="contenedor cards-info">
-            <div class="row col-md-12">
-                <div class="card text-center col-md-6">
-                    <div class="card-header">
-                        #####
-                    </div>
-                    <div class="card-body bg-info" style="background-image: url( '../../img/pexels-tobi-518557.jpg')">
-                        <h3 class="card-title ">Special title treatment</h3>
-                        <!-- <p class="card-text ">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="# " class="btn btn-primary ">Go somewhere</a> -->
-                    </div>
-                    <div class="card-footer text-muted ">
-                        ####
-                    </div>
+        <div class="contenedor m-4 cards-info">
+        <div class="contenedor m-4 cards-info">
+            <div class="card" style="width: 18rem;">
+                <img src="../../img/slid-02.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-color">Go somewhere</a>
                 </div>
             </div>
         </div>
+
+        <div class="contenedor m-4 cards-info">
+            <div class="card" style="width: 18rem;">
+                <img src="../../img/slid-02.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-color">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor m-4 cards-info">
+            <div class="card" style="width: 18rem;">
+                <img src="../../img/slid-02.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-color">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
     </section>
 
 

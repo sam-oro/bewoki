@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Material Turistico</title>
 </head>
 
 <!--importacion boostrap-->
@@ -17,6 +17,7 @@
 <script src="https://kit.fontawesome.com/f599362e7b.js" crossorigin="anonymous"></script>
 
 <link rel="stylesheet" href="../../css/estilos.css">
+<link rel="stylesheet" href="../../css/estilos3.css">
 
 <body>
     <section class="">
@@ -33,19 +34,19 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav hola ml-auto">
                     <li class="nav-item ">
-                        <a class="nav-link" href="index.php">Inicio</span></a>
+                        <a class="nav-link" href="../../index.php">Inicio</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="vistas/conocenos.php">Conócenos</a>
+                        <a class="nav-link" href="../conocenos/conocenos.php">Conócenos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Informate</a>
+                        <a class="nav-link" href="../informate/informate.php">Informate</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Eventos-Tour</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Aliados</a>
+                        <a class="nav-link" href="../aliados/aliados.php">Aliados</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Material Turistico</a>
@@ -67,22 +68,58 @@
     </section>
 
     <section>
-        <div class="contenedor cards-info">
-            <div class="row col-md-12">
+        <div class="contenedor m-4 cards-info">
+            <div class="row text-center tarjeta col-12">
                 <div class="card text-center col-md-6">
                     <div class="card-header">
                         #####
                     </div>
-                    <div class="card-body bg-info" style="background-image: url( '../../img/pexels-tobi-518557.jpg')">
-                        <h3 class="card-title ">Special title treatment</h3>
-                        <!-- <p class="card-text ">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="# " class="btn btn-primary ">Go somewhere</a> -->
+                    <div class="card-body bg-info" style="background-image: url( '../../img/museo.jpg')">
+                        <h3 class="card-title ">Museo El Castillo (Medellín)</h3>
                     </div>
                     <div class="card-footer text-muted ">
                         ####
                     </div>
                 </div>
+                <div class="card text-center col-md-6">
+                    <div class="card-header">
+                        #####
+                    </div>
+                    <div class="card-body bg-info" style="background-image: url( '../../img/rioclaro.jpg')">
+                        <h3 class="card-title ">Río Claro (Antioquia)</h3>
+                    </div>
+                    <div class="card-footer text-muted ">
+                        ####
+                    </div>
+                </div>
+
+                <div class="card text-center col-md-6">
+                    <div class="card-header">
+                        #####
+                    </div>
+                    <div class="card-body bg-info" style="background-image: url( '../../img/volcan.jpg')">
+                        <h3 class="card-title ">Volcán De Lodo (Arboletes)</h3>
+                    </div>
+                    <div class="card-footer text-muted ">
+                        ####
+                    </div>
+                </div>
+
+                <div class="card text-center col-md-6">
+                    <div class="card-header">
+                        #####
+                    </div>
+                    <div class="card-body bg-info" style="background-image: url( '../../img/ecoparque.jpg')">
+                        <h3 class="card-title ">Eco-Parque El Gaitero</h3>
+                    </div>
+                    <div class="card-footer text-muted ">
+                        ####
+                    </div>
+                </div>
+
+
             </div>
+
         </div>
     </section>
 

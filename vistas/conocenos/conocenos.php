@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Conocenos</title>
 </head>
 
 <!--importacion boostrap-->
@@ -73,17 +73,28 @@
             <div class="row conocenos m-0">
                 <div class="row col-12">
                     <div class="col-md-6 mb-md-5 my-lg-5 text-center">
-                        <img id="somos" src="../../img/iconos-01.svg" alt="">
+                        <img src="../../img/iconos-01.svg" alt="">
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <h3 class="mb-md-5 my-lg-3 text-center">¿Quienes Somos?</h3>
                         <p class="text-justify">Somos la comunidad digital para descubrir, emocionar y compartir experiencias y contenido saludable, seguro y sostenible en el territorio.</p>
+                        <h3 class="mb-md-5 my-lg-3 text-center">¿Qué hacemos?</h3>
+                        <p class="text-justify">Visibilizamos sobre el territorio y conectamos la oferta y demanda de contenido y experiencias turísticas, culturales, creativas, salud y bienestar.</p>
+                        <h3 class="mb-md-5 my-lg-3 text-center">¿Cómo lo hacemos?</h3>
+                        <p class="text-justify">A través de una plataforma tecnológica innovadora eficiente e incluyente que permite conformar una comunidad digital colaborativa.</p>
+                        <h3 class="mb-md-5 my-lg-3 text-center">¿Para quién lo hacemos?</h3>
+                        <p class="text-justify">Para todos los usuarios y actores de los ecosistemas turístico, cultural, creativo, salud y bienestar.</p>
+                        <h3 class="mb-md-5 my-lg-3 text-center">¿Qué beneficios obtiene el usuario, cliente o consumidor?</h3>
+                        <p class="text-justify">1. Seguridad y eficiencia en el descubrir, disfrutar y compartir experiencias y contenidos en el territorio.
+                            2. Salud y bienestar físico, emocional y mental.
+                            3. Consciencia sostenible mediante una conexión social con el patrimonio natural y cultural.
+                            4. Posibilidad de generar y aumentar ingresos, gracias al modelo de recompensas, marketing de afiliados y conversión de leads.</p>
                     </div>
                 </div>
 
                 <div class="row col-12">
                     <div class="col-sm-12 col-md-6 col-sm-12 mb-md-5 my-lg-5 text-center">
-                        <img id="mision" src="../../img/iconos-02.svg" alt="">
+                        <img src="../../img/iconos-02.svg" alt="">
                     </div>
                     <div class="col-sm-12 col-md-6 col-sm-12">
                         <h3 class="mb-md-5 my-lg-3 text-center">Misión</h3>
@@ -95,12 +106,35 @@
 
                 <div class="row col-12">
                     <div class="col-sm-12 col-md-6 mb-md-5 my-lg-5 text-center">
-                        <img id="vision" src="../../img/iconos-03.svg" alt="">
+                        <img src="../../img/iconos-03.svg" alt="">
                     </div>
                     <div class="col-sm-12 col-md-6 mt-5">
                         <h3 class="mb-md-5 my-lg-3 text-center">Visión</h3>
                         <p class="text-justify">Bewoki en el año 2025, se consolidará como organización BIC social y económicamente, certificada en sus procesos y reconocida como una plataforma y comunidad digital de experiencias y contenidos innovadores, seguros y sostenibles
                             que fomenten la preservación del patrimonio natural y cultural en el territorio.</p>
+                    </div>
+                </div>
+
+                <div class="row col-12">
+                    <div class="col-sm-12 col-md-6 mb-md-5 my-lg-5 text-center">
+                        <img src="../../img/valores.svg" alt="">
+                    </div>
+                    <div class="col-sm-12 col-md-6 mt-5">
+                        <h3 class="mb-md-5 my-lg-3 text-center">Valores</h3>
+                        <p class="text-justify">Integridad: Estamos comprometidos a hacer lo que es
+                            correcto, honesto y justo.
+                            • Calidad: Nos dedicamos a producir consistentemente
+                            resultados que cumplan y excedan las expectativas de
+                            nuestros clientes.
+
+                            • Respeto: Valoramos las marcas y sus productos, haciendo
+                            alianzas estratégicas con diferentes empresas del medio.
+                            • Competitividad e innovación: constantemente ideamos
+                            proyectos para mejorar los procesos, producción y la
+                            calidad de los bienes o los servicios.
+
+                            • Goce y Disfrute: Disfrutamos y nos gozamos cada uno de
+                            los proyectos que hacemos. Somos una empresa feliz</p>
                     </div>
                 </div>
 
