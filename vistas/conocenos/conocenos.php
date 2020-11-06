@@ -97,7 +97,7 @@
                     <div class="col-sm-12 col-md-6 mb-md-5 my-lg-5 text-center">
                         <img id="vision" src="../../img/iconos-03.svg" alt="">
                     </div>
-                    <div class="col-sm-12 col-md-6">
+                    <div class="col-sm-12 col-md-6 mt-5">
                         <h3 class="mb-md-5 my-lg-3 text-center">Visión</h3>
                         <p class="text-justify">Bewoki en el año 2025, se consolidará como organización BIC social y económicamente, certificada en sus procesos y reconocida como una plataforma y comunidad digital de experiencias y contenidos innovadores, seguros y sostenibles
                             que fomenten la preservación del patrimonio natural y cultural en el territorio.</p>
