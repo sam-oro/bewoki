@@ -1,0 +1,22 @@
+.bg-contact{
+    background-image: url(../img/bg-contacto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.logo {
+    margin-bottom: 3rem;
+}
+
+.form-veh {
+    /* width: 30%; */
+    background-color: #ffffff;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.logo img{
+    width: 60%;
+}
