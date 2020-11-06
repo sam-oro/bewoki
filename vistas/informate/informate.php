@@ -67,7 +67,7 @@
     </section>
 
     <section>
-        <div class="container">
+        <div class="contenedor cards-info">
             <div class="row col-md-12">
                 <div class="card text-center col-md-6">
                     <div class="card-header">
