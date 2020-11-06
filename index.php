@@ -212,32 +212,32 @@
         <hr>
         <section class="container">
             <div class="tarjetas">
-                    <div class="row fila_cont">
-                        <div class="col-md-3 col-sm-12 text-center">
-                            <a href="#">
-                                <img class="img_valores" src="img/index-icon-01.svg" alt="">
-                                <h3 class="titulo">Unete a la comunidad</h3>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-12 text-center">
-                            <a href="#">
-                                <img class="img_valores" src="img/index-icon-02.svg" alt="">
-                                <h3 class="titulo">Ayudados a mejorar</h3>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-12 text-center">
-                            <a href="#">
-                                <img class="img_valores" src="img/index-icon-03.svg" alt="">
-                                <h3 class="titulo">Conoce Colombia</h3>
-                            </a>
-                        </div>
-                        <div class="col-md-3 col-sm-12 text-center">
-                            <a href="vistas/contacto/contactenos.php">
-                                <img class="img_valores" src="img/index-icon-04.svg" alt="">
-                                <h3 class="titulo">Contactanos</h3>
-                            </a>
-                        </div>
+                <div class="row fila_cont">
+                    <div class="col-md-3 col-sm-12 text-center">
+                        <a href="#">
+                            <img class="img_valores" src="img/index-icon-01.svg" alt="">
+                            <h3 class="titulo">Unete a la comunidad</h3>
+                        </a>
                     </div>
+                    <div class="col-md-3 col-sm-12 text-center">
+                        <a href="#">
+                            <img class="img_valores" src="img/index-icon-02.svg" alt="">
+                            <h3 class="titulo">Ayudados a mejorar</h3>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-12 text-center">
+                        <a href="#">
+                            <img class="img_valores" src="img/index-icon-03.svg" alt="">
+                            <h3 class="titulo">Conoce Colombia</h3>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-12 text-center">
+                        <a href="vistas/contacto/contactenos.php">
+                            <img class="img_valores" src="img/index-icon-04.svg" alt="">
+                            <h3 class="titulo">Contactanos</h3>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
