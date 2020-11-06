@@ -17,6 +17,7 @@
 <script src="https://kit.fontawesome.com/f599362e7b.js" crossorigin="anonymous"></script>
 
 <link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/estilos2.css">
 
 <body>
     <section class="">
@@ -55,7 +56,7 @@
                             Perfil
                         </button>
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
-                            <button class="dropdown-item" type="button">Mi Perfil</button>
+                            <a style="text-decoration: none;" href="vistas/perfil/perfil.php"><button class="dropdown-item" type="button">Mi Perfil</button></a>
                             <button class="dropdown-item" type="button">Configuración</button>
                             <div class="dropdown-divider"></div>
                             <button class="dropdown-item" type="button">Cerrar Sección</button>
@@ -159,29 +160,29 @@
                     <div class="row fila_cont">
                         <div class="col-md-6 col-sm-12">
                             <h3 class="titulo">¿Quienes somos?</h3>
-                            <p>Somos la comunidad digital para descubrir, emocionar y compartir experiencias y contenido saludable, seguro y sostenible en el territorio.</p>
+                            <p class="texto">Somos la comunidad digital para descubrir, emocionar y compartir experiencias y contenido saludable, seguro y sostenible en el territorio.</p>
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <h3 class="titulo">¿Qué hacemos?</h3>
-                            <p>Visibilizamos sobre el territorio y conectamos la oferta y demanda de contenido y experiencias turísticas, culturales, creativas, salud y bienestar.</p>
+                            <p class="texto">Visibilizamos sobre el territorio y conectamos la oferta y demanda de contenido y experiencias turísticas, culturales, creativas, salud y bienestar.</p>
                         </div>
                     </div>
                     <div class="row fila_cont">
                         <div class="col-md-6 col-sm-12">
                             <h3 class="titulo">¿Cómo lo hacemos?</h3>
-                            <p>A través de una plataforma tecnológica innovadora eficiente e incluyente que permite conformar una comunidad digital colaborativa.</p>
+                            <p class="texto">A través de una plataforma tecnológica innovadora eficiente e incluyente que permite conformar una comunidad digital colaborativa.</p>
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <h3 class="titulo">¿Para quién lo hacemos?</h3>
-                            <p>A través de una plataforma tecnológica innovadora eficiente e incluyente que permite conformar una comunidad digital colaborativa.</p>
+                            <p class="texto">A través de una plataforma tecnológica innovadora eficiente e incluyente que permite conformar una comunidad digital colaborativa.</p>
                         </div>
                     </div>
                     <div class="row fila_cont">
                         <h3 class="titulo">¿Qué beneficios obtiene el usuario, cliente o consumidor?</h3>
-                        <p>1. Seguridad y eficiencia en el descubrir, disfrutar y compartir experiencias y contenidos en el territorio.</p>
-                        <p>2. Salud y bienestar físico, emocional y mental.</p>
-                        <p>3. Consciencia sostenible mediante una conexión social con el patrimonio natural y cultural.</p>
-                        <p>4. Posibilidad de generar y aumentar ingresos, gracias al modelo de recompensas, marketing de afiliados y conversión de leads.</p>
+                        <p class="texto">1. Seguridad y eficiencia en el descubrir, disfrutar y compartir experiencias y contenidos en el territorio.</p>
+                        <p class="texto">2. Salud y bienestar físico, emocional y mental.</p>
+                        <p class="texto">3. Consciencia sostenible mediante una conexión social con el patrimonio natural y cultural.</p>
+                        <p class="texto">4. Posibilidad de generar y aumentar ingresos, gracias al modelo de recompensas, marketing de afiliados y conversión de leads.</p>
                     </div>
                 </div>
             </div>
@@ -198,11 +199,11 @@
                             <img class="img_valores" src="img/iconos-01.svg" alt="">
                         </div>
                         <div class="col-md-8 col-sm-12">
-                            <p><b>• Integridad:</b> Estamos comprometidos a hacer lo que es correcto, honesto y justo.</p>
-                            <p><b>• Calidad:</b> Nos dedicamos a producir consistentemente resultados que cumplan y excedan las expectativas de nuestros clientes.</p>
-                            <p><b>• Respeto:</b> Valoramos las marcas y sus productos, haciendo alianzas estratégicas con diferentes empresas del medio.</p>
-                            <p><b>• Competitividad e innovación:</b> Constantemente ideamos proyectos para mejorar los procesos, producción y la calidad de los bienes o los servicios.</p>
-                            <p><b>• Goce y Disfrute:</b> Disfrutamos y nos gozamos cada uno de los proyectos que hacemos. Somos una empresa feliz.</p>
+                            <p class="texto"><b>Integridad:</b> Estamos comprometidos a hacer lo que es correcto, honesto y justo.</p>
+                            <p class="texto"><b>Calidad:</b> Nos dedicamos a producir consistentemente resultados que cumplan y excedan las expectativas de nuestros clientes.</p>
+                            <p class="texto"><b>Respeto:</b> Valoramos las marcas y sus productos, haciendo alianzas estratégicas con diferentes empresas del medio.</p>
+                            <p class="texto"><b>Competitividad e innovación:</b> Constantemente ideamos proyectos para mejorar los procesos, producción y la calidad de los bienes o los servicios.</p>
+                            <p class="texto"><b>Goce y Disfrute:</b> Disfrutamos y nos gozamos cada uno de los proyectos que hacemos. Somos una empresa feliz.</p>
                         </div>
                     </div>
                 </div>
@@ -213,27 +214,35 @@
             <div class="tarjetas">
                 <div class="row fila_cont">
                     <div class="col-md-3 col-sm-12 text-center">
-                        <a href="#">
-                            <img class="img_valores" src="img/index-icon-01.svg" alt="">
-                            <h3 class="titulo">Unete a la comunidad</h3>
+                        <a style="text-decoration: none;" href="#">
+                            <div class="vinculo">
+                                <img class="img_valores" src="img/index-icon-01.svg" alt="">
+                                <h3 class="titulo">Unete a la comunidad</h3>
+                            </div>
                         </a>
                     </div>
                     <div class="col-md-3 col-sm-12 text-center">
-                        <a href="#">
-                            <img class="img_valores" src="img/index-icon-02.svg" alt="">
-                            <h3 class="titulo">Ayudados a mejorar</h3>
+                        <a style="text-decoration: none;" href="#">
+                            <div class="vinculo">
+                                <img class="img_valores" src="img/index-icon-02.svg" alt="">
+                                <h3 class="titulo">Ayudados a mejorar</h3>
+                            </div>
                         </a>
                     </div>
                     <div class="col-md-3 col-sm-12 text-center">
-                        <a href="#">
-                            <img class="img_valores" src="img/index-icon-03.svg" alt="">
-                            <h3 class="titulo">Conoce Colombia</h3>
+                        <a style="text-decoration: none;" href="#">
+                            <div class="vinculo">
+                                <img class="img_valores" src="img/index-icon-03.svg" alt="">
+                                <h3 class="titulo">Conoce Colombia</h3>
+                            </div>
                         </a>
                     </div>
                     <div class="col-md-3 col-sm-12 text-center">
-                        <a href="vistas/contacto/contactenos.php">
-                            <img class="img_valores" src="img/index-icon-04.svg" alt="">
-                            <h3 class="titulo">Contactanos</h3>
+                        <a style="text-decoration: none;" href="vistas/contacto/contactenos.php">
+                            <div class="vinculo">
+                                <img class="img_valores" src="img/index-icon-04.svg" alt="">
+                                <h3 class="titulo">Contactanos</h3>
+                            </div>
                         </a>
                     </div>
                 </div>
