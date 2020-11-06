@@ -22,6 +22,27 @@ h3 {
     font-weight: 900;
 }
 
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    width: 100%;
+    margin: 2rem 0 2rem 0;
+    border-color: #009AC5;
+}
+
+b {
+    border-color: #009AC5;
+}
+
+.titulos {
+    display: flex;
+    justify-content: center;
+    color: #009AC5;
+}
+
 
 /* Utilidades */
 
@@ -40,6 +61,73 @@ h3 {
     cursor: pointer;
     background-color: #08b444;
     color: #ffffff;
+}
+
+
+/* Index */
+
+.video_idx {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    width: 56rem;
+    height: 31.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .video {
+        width: 49rem;
+        height: 24.5rem;
+    }
+}
+
+@media only screen and (max-width: 635px) {
+    .video {
+        width: 42rem;
+        height: 17.5rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .video {
+        width: 35rem;
+        height: 10.5rem;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .video {
+        width: 28rem;
+        height: 10.5rem;
+    }
+}
+
+
+/* QUE ES BEWOKI */
+
+.titulo {
+    margin-top: 3rem;
+    color: #009AC5;
+}
+
+
+/* Tarjetas Index */
+
+.img_valores {
+    width: 90%;
+}
+
+.img_tar {
+    display: flex;
+    justify-content: center;
+}
+
+.txt_tar {
+    display: flex;
+    text-align: center;
 }
 
 
@@ -81,6 +169,44 @@ nav a {
 nav a:hover {
     color: #F4AE0E !important;
 }
+
+
+/* Footer */
+
+.footer {
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 2rem;
+}
+
+.redes i {
+    color: #009A37;
+    font-size: 1.5rem;
+}
+
+.redes i:hover {
+    color: #009AC5;
+    font-size: 1.8rem;
+}
+
+.contach {
+    color: #009A37;
+    text-decoration: none;
+}
+
+.contach:hover {
+    color: #009AC5;
+    text-decoration: none;
+}
+
+.copy {
+    color: #08b444;
+}
+
+
+/* .copy:hover {
+    text-shadow: 2px 2px 4px #000000;
+} */
 
 
 /* Vista - Conocenos */
@@ -264,4 +390,29 @@ nav a:hover {
     .navbar-enlaces {
         display: none !important;
     }
+}
+
+
+/* Formulario Contactenos */
+
+.bg-contact {
+    background-image: url(../img/bg-contacto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.logo {
+    margin-bottom: 3rem;
+}
+
+.form-veh {
+    background-color: #ffffff;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.logo img {
+    width: 60%;
 }

@@ -67,24 +67,69 @@
     </section>
 
     <section>
-        <div class="contenedor cards-info">
+        <div class="container">
+            <div class="text-center col-12 my-4">
+                <h1>Lugares recomendados</h1>
+            </div>
             <div class="row col-md-12">
                 <div class="card text-center col-md-6">
                     <div class="card-header">
-                        #####
+                        Lugar Turistico
                     </div>
                     <div class="card-body bg-info" style="background-image: url( '../../img/pexels-tobi-518557.jpg')">
-                        <h3 class="card-title ">Special title treatment</h3>
+                        <h3 class="card-title ">Titulo del lugar</h3>
                         <!-- <p class="card-text ">With supporting text below as a natural lead-in to additional content.</p>
                         <a href="# " class="btn btn-primary ">Go somewhere</a> -->
                     </div>
                     <div class="card-footer text-muted ">
-                        ####
+                        Ubicación
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section>
+
+        <div class=" container">
+            <div class="text-center col-12 my-4">
+                <h1>Lugares </h1>
+            </div>
+            <div class="row col-md-12">
+                <div class="card text-center col-md-6">
+                    <div class="card-header">
+                        Lugar Turistico
+                    </div>
+                    <div class="card-body bg-info" style="background-image: url( '../../img/pexels-tobi-518557.jpg')">
+                        <h3 class="card-title ">Titulo del lugar</h3>
+                        <!-- <p class="card-text ">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="# " class="btn btn-primary ">Go somewhere</a> -->
+                    </div>
+                    <div class="card-footer text-muted ">
+                        Ubicación
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 text-lg-center text-center contac">
+                    <a href="#"></a>
+                    <h3 class="contach">Contáctenos</h3>
+                    </a>
+                </div>
+                <div class="col-lg-6 my-3 my-lg-0 text-lg-center text-center">
+                    <a class="redes btn btn-social mx-3" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="redes btn btn-social mx-3" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="redes btn btn-social mx-3" href="#!"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="col-lg-3 text-lg-left text-center copy">©Bewoki2020</div>
+            </div>
+        </div>
+    </footer>
 
 
 

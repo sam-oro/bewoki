@@ -1,5 +1,4 @@
-/*Global*/
-.row{
+Global .row {
     margin: 0;
     padding: 0;
 }
@@ -9,74 +8,80 @@ hr {
     margin: 2rem 0 2rem 0;
     border-color: #009AC5;
 }
-b{
+
+b {
     border-color: #009AC5;
 }
 
-.titulos{
-    display:flex;
+.titulos {
+    display: flex;
     justify-content: center;
     color: #009AC5;
 }
 
+
 /* VIDEO */
-.video_idx{
-    width:  100%;
+
+.video_idx {
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.video{
+.video {
     width: 56rem;
     height: 31.5rem;
 }
 
 @media only screen and (max-width: 800px) {
-    .video{
+    .video {
         width: 49rem;
         height: 24.5rem;
     }
 }
 
 @media only screen and (max-width: 635px) {
-    .video{
+    .video {
         width: 42rem;
         height: 17.5rem;
     }
 }
 
 @media only screen and (max-width: 575px) {
-    .video{
+    .video {
         width: 35rem;
         height: 10.5rem;
     }
 }
 
 @media only screen and (max-width: 370px) {
-    .video{
+    .video {
         width: 28rem;
         height: 10.5rem;
     }
 }
 
+
 /* QUE ES BEWOKI */
 
-.titulo{
+.titulo {
     margin-top: 3rem;
     color: #009AC5;
 }
 
+
 /* TARJETAS */
-.img_valores{
+
+.img_valores {
     width: 90%;
 }
 
-.img_tar{
-    display:flex;
+.img_tar {
+    display: flex;
     justify-content: center;
 }
 
-.txt_tar{
-    display:flex;
+.txt_tar {
+    display: flex;
     text-align: center;
 }
