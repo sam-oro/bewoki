@@ -15,7 +15,6 @@
 <!-- Font Awesome -->
 <script src="https://kit.fontawesome.com/f599362e7b.js" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="../../css/estilos4.css">
 <link rel="stylesheet" href="../../css/estilos.css">
 <body>
     <body class="bg-contact">
