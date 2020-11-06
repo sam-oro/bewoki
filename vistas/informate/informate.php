@@ -36,19 +36,19 @@
                         <a class="nav-link" href="../../index.php">Inicio</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="vistas/conocenos.php">Conócenos</a>
+                        <a class="nav-link" href="../conocenos/conocenos.php">Conócenos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Informate</a>
+                        <a class="nav-link" href="informate.php">Informate</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Eventos-Tour</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Aliados</a>
+                        <a class="nav-link" href="../aliados/aliados.php">Aliados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Material Turistico</a>
+                        <a class="nav-link" href="../materialturistico/turistico.php">Material Turistico</a>
                     </li>
                     <div class="btn-group">
                         <button type="button" class="btn btn-invi dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">

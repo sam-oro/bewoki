@@ -17,6 +17,7 @@
 <script src="https://kit.fontawesome.com/f599362e7b.js" crossorigin="anonymous"></script>
 
 <link rel="stylesheet" href="../../css/estilos.css">
+<link rel="stylesheet" href="../../css/estilos4.css">
 
 <body>
     <section class="">
@@ -33,22 +34,22 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav hola ml-auto">
                     <li class="nav-item ">
-                        <a class="nav-link" href="#">Inicio</span></a>
+                        <a class="nav-link" href="../../index.php">Inicio</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Conócenos</a>
+                        <a class="nav-link" href="conocenos.php">Conócenos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Informate</a>
+                        <a class="nav-link" href="../informate/informate.php">Informate</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Eventos-Tour</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Aliados</a>
+                        <a class="nav-link" href=../aliados/aliados.php>Aliados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Material Turistico</a>
+                        <a class="nav-link" href="../materialturistico/turistico.php">Material Turistico</a>
                     </li>
                     <div class="btn-group">
                         <button type="button" class="btn btn-invi dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
@@ -83,10 +84,10 @@
                         <h3 class="mb-md-5 my-lg-3 text-center">¿Para quién lo hacemos?</h3>
                         <p class="text-justify">Para todos los usuarios y actores de los ecosistemas turístico, cultural, creativo, salud y bienestar.</p>
                         <h3 class="mb-md-5 my-lg-3 text-center">¿Qué beneficios obtiene el usuario, cliente o consumidor?</h3>
-                        <p class="text-justify">1. Seguridad y eficiencia en el descubrir, disfrutar y compartir experiencias y contenidos en el territorio.
-                            2. Salud y bienestar físico, emocional y mental.
-                            3. Consciencia sostenible mediante una conexión social con el patrimonio natural y cultural.
-                            4. Posibilidad de generar y aumentar ingresos, gracias al modelo de recompensas, marketing de afiliados y conversión de leads.</p>
+                        <p class="text-justify">1. Seguridad y eficiencia en el descubrir, disfrutar y compartir experiencias y contenidos en el territorio.</p>
+                        <p class="text-justify">2. Salud y bienestar físico, emocional y mental.</p>
+                        <p class="text-justify">3. Consciencia sostenible mediante una conexión social con el patrimonio natural y cultural.</p>
+                        <p class="text-justify">4. Posibilidad de generar y aumentar ingresos, gracias al modelo de recompensas, marketing de afiliados y conversión de leads.</p>
                     </div>
                 </div>
 
@@ -94,7 +95,7 @@
                     <div class="col-sm-12 col-md-6 col-sm-12 mb-md-5 my-lg-5 text-center">
                         <img src="../../img/iconos-02.svg" alt="">
                     </div>
-                    <div class="col-sm-12 col-md-6 col-sm-12">
+                    <div class="col-sm-12 col-md-6 col-sm-12 mision">
                         <h3 class="mb-md-5 my-lg-3 text-center">Misión</h3>
                         <p class="text-justify">Fomentar con innovación tecnológica y creando comunidad, la industria turística, cultural y creativa permitiendo disfrutar segura, sostenible y saludablemente experiencias y contenidos que promuevan la preservación del patrimonio
                             natural y cultural en el territorio, con un equipo comprometido con los objetivos y expectativas de todos los clientes internos y externos. Generamos visibilidad, interacción y conexión entre los usuarios del territorio incentivando
@@ -107,18 +108,18 @@
                         <img src="../../img/iconos-03.svg" alt="">
                     </div>
                     <div class="col-sm-12 col-md-6 mt-5">
-                        <h3 class="mb-md-5 my-lg-3 text-center">Visión</h3>
+                        <h3 class="mb-md-5 my-lg-3 text-center imgpadding">Visión</h3>
                         <p class="text-justify">Bewoki en el año 2025, se consolidará como organización BIC social y económicamente, certificada en sus procesos y reconocida como una plataforma y comunidad digital de experiencias y contenidos innovadores, seguros y sostenibles
                             que fomenten la preservación del patrimonio natural y cultural en el territorio.</p>
                     </div>
                 </div>
 
                 <div class="row col-12">
-                    <div class="col-sm-12 col-md-6 mb-md-5 my-lg-5 text-center">
+                    <div class="col-sm-12 col-md-6 mb-md-5 my-lg-5 text-center imgpadding2">
                         <img src="../../img/valores.svg" alt="">
                     </div>
-                    <div class="col-sm-12 col-md-6 mt-5">
-                        <h3 class="mb-md-5 my-lg-3 text-center">Valores</h3>
+                    <div class="col-sm-12 col-md-6 mt-5" >
+                        <h3 class="mb-md-5 mt-lg-3 text-center imgpadding3">Valores</h3>
                         <p class="text-justify">Integridad: Estamos comprometidos a hacer lo que es
                             correcto, honesto y justo.
                             • Calidad: Nos dedicamos a producir consistentemente
@@ -145,7 +146,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-3 text-lg-center text-center contac">
-                    <a href="#"></a>
+                    <a href="../contacto/contactenos.php">
                     <h3 class="contach">Contáctenos</h3>
                     </a>
                 </div>
