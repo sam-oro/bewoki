@@ -17,7 +17,6 @@
 <script src="https://kit.fontawesome.com/f599362e7b.js" crossorigin="anonymous"></script>
 
 <link rel="stylesheet" href="css/estilos.css">
-<link rel="stylesheet" href="css/estilos2.css">
 
 <body>
     <section class="">
@@ -40,16 +39,16 @@
                         <a class="nav-link" href="vistas/conocenos/conocenos.php">Conócenos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Informate</a>
+                        <a class="nav-link" href="vistas/informate/informate.php">Informate</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Eventos-Tour</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Aliados</a>
+                        <a class="nav-link" href="vistas/aliados/aliados.php">Aliados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Material Turistico</a>
+                        <a class="nav-link" href="vistas/materialturistico/turistico.php">Material Turistico</a>
                     </li>
                     <div class="btn-group">
                         <button type="button" class="btn btn-invi dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
@@ -241,6 +240,23 @@
             </div>
         </section>
     </div>
+    <footer class="footer mt-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 text-lg-center text-center contac">
+                    <a href="#"></a>
+                    <h3 class="contach">Contáctenos</h3>
+                    </a>
+                </div>
+                <div class="col-lg-6 my-3 my-lg-0 text-lg-center text-center">
+                    <a class="redes btn btn-social mx-3" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="redes btn btn-social mx-3" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="redes btn btn-social mx-3" href="#!"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="col-lg-3 text-lg-left text-center copy">©Bewoki2020</div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>

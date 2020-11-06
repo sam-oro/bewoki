@@ -22,7 +22,7 @@
     <section class="">
         <nav class="navbar navbar-expand-lg navbar-light bg-nav">
             <div class="col-sm-3 text-center">
-                <a class="navbar-brand" href="index.php">
+                <a class="navbar-brand" href="../../index.php">
                     <img src="../../img/logo.png" alt="">
                 </a>
             </div>
@@ -33,7 +33,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav hola ml-auto">
                     <li class="nav-item ">
-                        <a class="nav-link" href="index.php">Inicio</span></a>
+                        <a class="nav-link" href="../../index.php">Inicio</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="vistas/conocenos.php">Conócenos</a>

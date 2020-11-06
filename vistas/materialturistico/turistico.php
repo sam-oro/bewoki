@@ -22,7 +22,7 @@
     <section class="">
         <nav class="navbar navbar-expand-lg navbar-light bg-nav">
             <div class="col-sm-3 text-center">
-                <a class="navbar-brand" href="index.php">
+                <a class="navbar-brand" href="../../index.php">
                     <img src="../../img/logo.png" alt="">
                 </a>
             </div>
