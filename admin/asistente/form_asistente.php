@@ -35,7 +35,7 @@
                 <a href="#" class="d-flex text-light p-3 border-0"><i class="icon ion-md-stats lead mr-2"></i><h5 class="m-1 navbar-enlaces">Estadísticas</h5></a>
                 <a href="#" class="d-flex text-light p-3 border-0"><i class="icon ion-md-person lead mr-2"></i><h5 class="m-1 navbar-enlaces">Perfil</h5></a>
                 <a href="#" class="d-flex text-light p-3 border-0"> <i class="icon ion-md-settings lead mr-2"></i>
-                    <h5 class="m-1 navbar-enlaces">Configuración</h5>
+                    <h5 class="m-1 navbar-enlaces">Otros</h5>
                 </a>
                 <a href=""></a>
 

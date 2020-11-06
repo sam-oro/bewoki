@@ -252,6 +252,14 @@ nav a:hover {
 
 @media only screen and (max-width: 800px) {
     .navbar-enlaces {
+        /* display: none !important; */
+        font-size: 0.6rem;
+        margin-top: 0.6rem !important;
+    }
+}
+
+@media only screen and (max-width: 683px) {
+    .navbar-enlaces {
         display: none !important;
     }
 }
