@@ -6,9 +6,9 @@
 /*TARJETAS DE ABAJO*/
 .vinculo{
     border-radius: 1rem;
-    height: 18rem;
+    height: 22rem;
 }
 .vinculo:hover{
-    background-color: azure;
+    background-color: lightcyan;
     width: 110%;
 }
