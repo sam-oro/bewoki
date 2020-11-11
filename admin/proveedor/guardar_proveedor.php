@@ -27,5 +27,7 @@ $baseDeDatos = obtenerBaseDeDatos();
 
     ]);
     
+    echo "<script> 	alert ('Ingresado con exito'); </script>";
+    echo "<script> 	location.href='form_proveedor.php'; </script>";
 
 ?>

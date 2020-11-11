@@ -18,6 +18,9 @@ $baseDeDatos = obtenerBaseDeDatos();
         "contraseña" => $contrasena ,
         "movil" => $movil ,
         "correo" => $correo ,
+        
     ]);
+    echo "<script> 	alert ('Ingresado con exito'); </script>";
+    echo "<script> 	location.href='form_asistente.php'; </script>";
 
 ?>

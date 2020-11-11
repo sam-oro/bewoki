@@ -18,4 +18,6 @@
         "Lon_sitio" => $longitud ,
         
     ]);
+    echo "<script> 	alert ('Ingresado con exito'); </script>";
+    echo "<script> 	location.href='form_sitio.php'; </script>";
 ?>

@@ -34,5 +34,7 @@ $baseDeDatos = obtenerBaseDeDatos();
         "Sexo_orga" => $sexo,
     ]);
     
+    echo "<script> 	alert ('Ingresado con exito'); </script>";
+    echo "<script> 	location.href='form_organizador.php'; </script>";
 
 ?>
