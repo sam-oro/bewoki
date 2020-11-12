@@ -47,7 +47,7 @@
                                             <label>Apellido</label>
                                             <input
                                                 type="text"
-                                                name="apellidos"
+                                                name="apellido"
                                                 class="form-control"
                                                 placeholder="Ingrese los apellidos"
                                                 id="apellido"                                      
@@ -88,8 +88,35 @@
                                                 id="con2">
                                         </div>
                                     </div>
+                                    <div class="row">
+                                        <div class="col">
+
+                                            <label>Edad</label>
+                                            <input
+                                                type="number"
+                                                name="edad"
+                                                class="form-control"
+                                                placeholder="Ingrese su edad">
+                                        </div>
+                                        <div class="col">
+                                            <label>Direccion</label>
+                                            <input
+                                                type="text"
+                                                name="direccion"
+                                                class="form-control"
+                                                placeholder="direccion de residencia">
+                                        </div>
+                                        <div class="col">
+                                            <label>Telefono Celular</label>
+                                            <input
+                                                type="text"
+                                                name="celular"
+                                                class="form-control"
+                                                placeholder="direccion de residencia">
+                                        </div>
+                                    </div>
                                 
-                                <button type="button" class="btn btn-color">Registrarse</button>
+                                <button type="submit" class="btn btn-color">Registrarse</button>
                             </div>
 
                         </form>

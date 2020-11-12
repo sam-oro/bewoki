@@ -51,6 +51,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="vistas/materialturistico/turistico.php">Material Turistico</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vistas/usuario/form_usuario.php">Registar Usuario</a>
+                    </li>
                     <div class="btn-group">
                         <button type="button" class="btn btn-invi dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
                             Perfil
@@ -94,8 +97,8 @@
         <hr>
         <section class="container">
             <div class="video_idx">
-                <iframe class="video" src="https://www.youtube.com/embed/bUsq4jHt3eY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <!--<?php/*
+                
+                <?php
                 include "admin/conexion/conexion.php";
 
                 $baseDeDatos = obtenerBaseDeDatos();
@@ -106,7 +109,7 @@
                 {
                     $row=json_decode(json_encode($valor),true);
                     echo('<iframe class="video" src="'.$row['Url'].'" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
-                }*/
+                }
                 ?>
                 
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -147,7 +150,7 @@
                             </div>
                         </div>
                     </div>
-                </div> --> 
+                </div> 
             </div>
         </section>
         <hr>

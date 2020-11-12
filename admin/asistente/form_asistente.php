@@ -67,9 +67,29 @@
                     <button type="submit" class="btn btn-color text-center">Enviar</button>
                 </div>
 
+                
+
             </form>
         </div>
     </div>
+
+                <?php
+                include '../conexion/conexion.php';
+                $baseDeDatos = obtenerBaseDeDatos();
+                $coleccion = $baseDeDatos->Asistente;
+                $cursor = $coleccion->find();
+
+                foreach ( $cursor as $id => $valor )
+                {   
+                $row=json_decode(json_encode($valor),true);
+
+
+                 echo ($row['documento']);
+                 echo '<br>';
+
+                }
+
+                ?> 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
