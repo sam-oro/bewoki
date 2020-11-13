@@ -114,7 +114,8 @@
                                                 class="form-control"
                                                 placeholder="direccion de residencia">
                                         </div>
-                                    </div>
+                                    </div><br>
+                                    <span><a href="../../admin/proveedor/form_proveedor.php">¿Eres Un Proveedor? Da click! Aqui!</a></span><br>
                                 
                                 <button type="submit" class="btn btn-color">Registrarse</button>
                             </div>

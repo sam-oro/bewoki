@@ -28,7 +28,7 @@
                     <img src="../../img/logo.png" class="logo" alt="Logotipo">
                 </a>
                 <div class="col-12">
-                    <form action="config/login.php" method="POST" class="formulario">
+                    <form action="login.php" method="POST" class="formulario">
                         <h1 class="inicio">Iniciar Sesión</h1>
                         <label for=""> Correo Electrónico</label>
                         <input type="text" class="form-control" name ="usuario" placeholder="Introduce el correo electrónico">
