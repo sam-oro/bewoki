@@ -34,11 +34,11 @@
             <form action="">
                 <div class="form-row">
                     <div class="form-group col-12 col-md-6">
-                        <label for="">Nombre</label>
+                        <label for="">Nombre de la empresa</label>
                         <input type="text" class="form-control" placeholder="Ingrese el nombre">
                     </div>
                     <div class="form-group col-12 col-md-6">
-                        <label for="">Apellido</label>
+                        <label for="">RUT de la empresa</label>
                         <input type="text" class="form-control" placeholder="Ingrese los apellidos">
                     </div>
                 </div>
