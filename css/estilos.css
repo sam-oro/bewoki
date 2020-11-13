@@ -141,15 +141,17 @@ b {
     border-radius: 0.5rem;
 }
 
-.dropdown-item:focus,
+
+/* .dropdown-item:focus,
 .dropdown-item:hover {
     color: #F4AE0E !important;
-}
+} */
 
-.btn-invi.active,
+
+/* .btn-invi.active,
 .btn-invi:hover {
     color: #F4AE0E !important;
-}
+} */
 
 nav img {
     width: 40%;
@@ -173,6 +175,17 @@ nav a {
 
 nav a:hover {
     color: #F4AE0E !important;
+}
+
+
+/* #dropdownMenuButton {
+    background-color: #582b2b !important;
+    border: none !important;
+} */
+
+.dropdown-item:hover {
+    background-color: #929292 !important;
+    color: #ffffff;
 }
 
 

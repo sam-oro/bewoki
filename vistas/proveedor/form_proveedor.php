@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <title>Registrarse</title>
 
     <!--importacion boostrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -26,7 +26,7 @@
 
         <div class="col-12">
             <div class="text-center">
-                <h1>Nuevo usuario</h1>
+                <h1>Nuevo proveedor</h1>
             </div>
         </div>
 
@@ -34,23 +34,27 @@
             <form action="">
                 <div class="form-row">
                     <div class="form-group col-12 col-md-6">
-                        <label for="">Nombre de la empresa</label>
+                        <label for="">Nombre</label>
                         <input type="text" class="form-control" placeholder="Ingrese el nombre">
                     </div>
                     <div class="form-group col-12 col-md-6">
-                        <label for="">RUT de la empresa</label>
+                        <label for="">Apellido</label>
                         <input type="text" class="form-control" placeholder="Ingrese los apellidos">
                     </div>
                 </div>
 
                 <div class="form-row">
-                    <div class="form-group col-12 col-md-6">
-                        <label for="">Edad</label>
-                        <input type="number" class="form-control" placeholder="Ingrese la edad">
+                    <div class="form-group col-12 col-md-4">
+                        <label for="">Télefono</label>
+                        <input type="text" class="form-control" placeholder="Ingrese el nombre">
                     </div>
-                    <div class="form-group col-12 col-md-6">
+                    <div class="form-group col-12 col-md-4">
                         <label for="">Celular</label>
-                        <input type="text" class="form-control" placeholder="Ingrese un número de celular">
+                        <input type="text" class="form-control" placeholder="Ingrese los apellidos">
+                    </div>
+                    <div class="form-group col-12 col-md-4">
+                        <label for="">Dirección</label>
+                        <input type="text" class="form-control" placeholder="Ingrese los apellidos">
                     </div>
                 </div>
 
@@ -72,9 +76,6 @@
                     </div>
                 </div>
 
-                <!-- <div class="col-12 text-center">
-                    <a href="">¿Eres un proveedor?</a>
-                </div> -->
 
                 <div class="col-12 text-center">
                     <button class="btn btn-color">Registrarse</button>
