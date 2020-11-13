@@ -31,48 +31,48 @@
         </div>
 
         <div>
-            <form action="">
+            <form action="../../admin/proveedor/guardar_proveedor.php" method="POST">
                 <div class="form-row">
                     <div class="form-group col-12 col-md-6">
                         <label for="">Nombre de la empresa</label>
-                        <input type="text" class="form-control" placeholder="Ingrese el nombre">
+                        <input type="text" class="form-control" placeholder="Ingrese el nombre" name="nombre">
                     </div>
                     <div class="form-group col-12 col-md-6">
                         <label for="">RUT de la empresa</label>
-                        <input type="text" class="form-control" placeholder="Ingrese los apellidos">
+                        <input type="text" class="form-control" placeholder="Ingrese los apellidos" name="rut">
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group col-12 col-md-4">
                         <label for="">Télefono</label>
-                        <input type="text" class="form-control" placeholder="Ingrese el nombre">
+                        <input type="text" class="form-control" placeholder="Ingrese el nombre" name="telefono">
                     </div>
                     <div class="form-group col-12 col-md-4">
                         <label for="">Celular</label>
-                        <input type="text" class="form-control" placeholder="Ingrese los apellidos">
+                        <input type="text" class="form-control" placeholder="Ingrese los apellidos" name="celular">
                     </div>
                     <div class="form-group col-12 col-md-4">
                         <label for="">Dirección</label>
-                        <input type="text" class="form-control" placeholder="Ingrese los apellidos">
+                        <input type="text" class="form-control" placeholder="Ingrese los apellidos" name="direccion">
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group col-12">
                         <label for="">Correo</label>
-                        <input type="email" class="form-control" placeholder="Ingrese el correo electrónico">
+                        <input type="email" class="form-control" placeholder="Ingrese el correo electrónico" name="correo">
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group col-12 col-md-6">
                         <label for="">Contraseña</label>
-                        <input type="password" class="form-control" placeholder="Ingrese una contraseña">
+                        <input type="password" class="form-control" placeholder="Ingrese una contraseña" name="contraseña">
                     </div>
                     <div class="form-group col-12 col-md-6">
                         <label for="">Confirmar contraseña</label>
-                        <input type="password" class="form-control" placeholder="Ingrese nuevamente la contraseña">
+                        <input type="password" class="form-control" placeholder="Ingrese nuevamente la contraseña" name="contraseña2">
                     </div>
                 </div>
 
