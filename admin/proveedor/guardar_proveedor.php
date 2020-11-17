@@ -2,32 +2,30 @@
 
 include '../conexion/conexion.php';
 
-$id=$_POST['id'];;
-$rut=$_POST['rut'];
 $nombre=$_POST['nombre'];
+$rut=$_POST['rut'];
 $celular=$_POST['celular'];
 $telefono=$_POST['telefono'];
 $correo=$_POST['correo'];
 $direccion=$_POST['direccion'];
-$ubicacion=$_POST['ubicacion'];
+$contraseña=$_POST['contraseña'];
 
 
 $baseDeDatos = obtenerBaseDeDatos();
     # Acceder a la colección contactos
     $coleccion = $baseDeDatos->Proveedor;
-    $resultado = $coleccion->insertOne([
-        "Cod_prove" => $id , 
+    $resultado = $coleccion->insertOne([ 
         "RUT_prove" => $rut  ,
         "Nom_prove" => $nombre ,
         "Mov_prove" => $celular ,
         "Tel_prove" => $telefono ,
         "corr_prove" => $correo ,
         "Dire_prove" => $direccion ,
-        "Ubicacion" => $ubicacion,
+        "Password_prove" => $contraseña,
 
     ]);
     
     echo "<script> 	alert ('Ingresado con exito'); </script>";
-    echo "<script> 	location.href='form_proveedor.php'; </script>";
+    echo "<script> 	location.href='../../vistas/proveedor/form_proveedor.php'; </script>";
 
 ?>

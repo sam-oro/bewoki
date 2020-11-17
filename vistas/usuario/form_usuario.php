@@ -77,6 +77,7 @@
                 </div> -->
 
                 <div class="col-12 text-center">
+                <span><a href="../proveedor/form_proveedor.php">¿Eres Un Proveedor? Da click! Aqui!</a></span><br>
                     <button class="btn btn-color">Registrarse</button>
                 </div>
 

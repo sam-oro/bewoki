@@ -19,7 +19,7 @@ $clave=$_POST['password'];
                 // { 
                 // $row=json_decode(json_encode($Query,$query2),true);
                 
-                // echo ($row['Corr_usuario']);
+                // echo ($row['Corr_usuario']);git p
 
 
                 // }
