@@ -1,3 +1,16 @@
+<?php
+    include "../conexion.php";
+    session_start();
+    if(!isset($_SESSION['rol'])){
+        header('location: ../../vistas/login/iniciar_sesion.php');
+    }else{
+        if($_SESSION['rol'] !=1 ){
+            header('location: ../../vistas/login/iniciar_sesion.php');
+        }else{
+            include '../../vistas/header-admin.php';
+        }
+    }
+?>
 <!doctype html>
 <html lang="en">
 

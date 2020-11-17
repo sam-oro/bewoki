@@ -3,15 +3,15 @@
 include 'admin/conexion/conexion.php';
 
 session_start();
-        /*if(!isset($_SESSION['rol'])){
-            include 'vistas/includes/header-inicio.php';
+        if(!isset($_SESSION['rol'])){
+            include 'vistas/includes/header_inicio.php';
         }else{
             if($_SESSION['rol'] !=1 ){
                 if($_SESSION['rol'] =2 ){
-                    include 'vistas/includes/header-admin.php';
+                    include 'vistas/includes/header_usuario.php';
                 }else {
                     if($_SESSION['rol']=3){
-                        include 'vistas/includes/header-inicio.php';
+                        include 'vistas/includes/header_vendedor.php';
                     }else {
                         include 'vistas/includes/header-inicio.php';
                     } 
@@ -19,7 +19,7 @@ session_start();
             }else {
                 include 'vistas/includes/header-inicio.php';
             }            
-        }*/
+        }
 
 ?>
 
