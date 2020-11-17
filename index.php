@@ -1,3 +1,28 @@
+<?php
+
+include 'admin/conexion/conexion.php';
+
+session_start();
+        /*if(!isset($_SESSION['rol'])){
+            include 'vistas/includes/header-inicio.php';
+        }else{
+            if($_SESSION['rol'] !=1 ){
+                if($_SESSION['rol'] =2 ){
+                    include 'vistas/includes/header-admin.php';
+                }else {
+                    if($_SESSION['rol']=3){
+                        include 'vistas/includes/header-inicio.php';
+                    }else {
+                        include 'vistas/includes/header-inicio.php';
+                    } 
+                }
+            }else {
+                include 'vistas/includes/header-inicio.php';
+            }            
+        }*/
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -99,7 +124,7 @@
             <div class="video_idx">
                 
                 <?php
-                include "admin/conexion/conexion.php";
+                //include "admin/conexion/conexion.php";
 
                 $baseDeDatos = obtenerBaseDeDatos();
                 $coleccion = $baseDeDatos->video_index;
@@ -111,10 +136,17 @@
                     echo('<iframe class="video" src="'.$row['Url'].'" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
                 }
                 ?>
+
+
+                <?php
+                if($_SESSION['rol']==1){
+                echo ' <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Cambiar Video
+                </button>';
                 
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                    Cambiar Video
-                </button>
+                    }
+                ?>
+
 
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
@@ -133,18 +165,18 @@
                                             <input class="form-control" type="text" name="nombre">
                                         </div>
                                         <fieldset>
-                                        <legend>video</legend>
-                                        <p>Si inserta el video con un URL no es necesario que seleccione un video desde su dispositivo y viceversa; Si rellena el campo URL y selecciona un archivo desde su dispositivo, se dará prioridad al URL que ingreso primero</p>
+                                        <legend>vídeo</legend>
+                                        <p>Si inserta el vídeo con un URL no es necesario que seleccione un vídeo desde su dispositivo y viceversa; Si rellena el campo URL y selecciona un archivo desde su dispositivo, se dará prioridad al URL que ingreso primero</p>
                                         <div class="form-group">
-                                            <label>URL Video</label>
+                                            <label>URL Vídeo</label>
                                             <input class="form-control" type="text" name="url">
                                         </div>
                                         <div class="form-group">
-                                            <label>Seleccionar Video</label>
+                                            <label>Seleccionar Vídeo</label>
                                             <input class="form-control" type="file" name="video">
                                         </div>
                                         </fieldset>
-                                        <button type="submit" class="btn btn-primary">enviar</button>
+                                        <button type="submit" class="btn btn-primary">Enviar</button>
                                     </form>
                                 </div>
                             </div>

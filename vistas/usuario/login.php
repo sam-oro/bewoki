@@ -43,6 +43,7 @@ $clave=$_POST['password'];
                 }else{
                     $_SESSION['rol']=$row['Rol_usuario'];
                     echo "<script> 	alert('Bienvenidos'); </script>";
+                    //echo $_SESSION['rol'];
                     echo "<script>  location.href='../../index.php'; </script>";
                 }
 

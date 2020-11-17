@@ -24,6 +24,8 @@ if ($_POST['url'] != "") {
             ]
         ]
     );
+    echo "<script> 	alert('Cambio guardado con exito') </script>";
+    echo "<script>  location.href='../../index.php'; </script>";
 }else{
     //Si URL esta vacio se toman los datos que traiga del selector de ficheros
     $nombv = $_FILES['video']['name'];
@@ -59,6 +61,8 @@ if ($_POST['url'] != "") {
                         ],
                     ]
                 );
+                echo "<script> 	alert('Cambio guardado con exito') </script>";
+                echo "<script>  location.href='../../index.php'; </script>";
             }else{
                 echo "Archivo no se pudo guardar ya sea por el tamaño o porque la extenxion no es .mp4";
             }
@@ -82,6 +86,8 @@ if ($_POST['url'] != "") {
                     ],
                 ]
             );
+            echo "<script> 	alert('Cambio guardado con exito') </script>";
+            echo "<script>  location.href='../../index.php'; </script>";
         }else{
             echo "Archivo no se pudo guardar ya sea por el tamaño o porque la extenxion no es .mp4";
         }

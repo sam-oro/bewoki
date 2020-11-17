@@ -1,3 +1,27 @@
+<?php
+
+include '../admin/conexion/conexion.php';
+
+session_start();
+        if(!isset($_SESSION['rol'])){
+            include 'vistas/includes/header-inicio.php';
+        }else{
+            if($_SESSION['rol'] !=1 ){
+                if($_SESSION['rol'] =2 ){
+                    include 'vistas/includes/header-admin.php';
+                }else {
+                    if($_SESSION['rol']=3){
+                        include 'vistas/includes/header-inicio.php';
+                    }else {
+                        include 'vistas/includes/header-inicio.php';
+                    } 
+                }
+            }else {
+                include 'vistas/includes/header-inicio.php';
+            }            
+        }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
