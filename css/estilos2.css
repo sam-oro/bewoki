@@ -9,6 +9,5 @@
     height: 22rem;
 }
 .vinculo:hover{
-    background-color: lightcyan;
-    width: 110%;
+    transform: translate(0,-15px);
 }

@@ -29,16 +29,16 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VistaCard</title>
     
-<!--importacion boostrap-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--importacion boostrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
 
-<!-- Font Awesome -->
-<script src="https://kit.fontawesome.com/f599362e7b.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f599362e7b.js" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="../../../css/estilos.css">
+    <link rel="stylesheet" href="../../../css/estilos.css">
 </head>
 <body>
 

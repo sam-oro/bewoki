@@ -29,58 +29,36 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aliados</title>
+    <!--importacion boostrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f599362e7b.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../css/estilos.css">
 </head>
-
-<!--importacion boostrap-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
-
-<!-- Font Awesome -->
-<script src="https://kit.fontawesome.com/f599362e7b.js" crossorigin="anonymous"></script>
-
-<link rel="stylesheet" href="../../css/estilos.css">
-
 <body>
 
     <section>
         <div class="contenedor m-4 cards-info">
-        <div class="contenedor m-4 cards-info">
-            <div class="card" style="width: 18rem;">
-                <img src="../../img/slid-02.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-color">Go somewhere</a>
+            <div class="contenedor m-4 cards-info">
+                <div class="card" style="width: 18rem;">
+                    <img src="../../img/slid-02.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <h3 style="text-transform:uppercase;">Card title</h3>
+                        </div>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="text-center">
+                            <a href="#"><button class="btn btn-color">Ver aliado</button></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="contenedor m-4 cards-info">
-            <div class="card" style="width: 18rem;">
-                <img src="../../img/slid-02.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-color">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="contenedor m-4 cards-info">
-            <div class="card" style="width: 18rem;">
-                <img src="../../img/slid-02.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-color">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-
-        </div>
-
     </section>
 
     <footer class="footer mt-4">
