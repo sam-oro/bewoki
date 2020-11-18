@@ -31,44 +31,44 @@
         </div>
 
         <div>
-            <form action="">
+            <form action="guardar_usuario.php" method="POST">
                 <div class="form-row">
                     <div class="form-group col-12 col-md-6">
                         <label for="">Nombre</label>
-                        <input type="text" class="form-control" placeholder="Ingrese el nombre">
+                        <input type="text" class="form-control" placeholder="Ingrese el nombre" name="nombre">
                     </div>
                     <div class="form-group col-12 col-md-6">
                         <label for="">Apellido</label>
-                        <input type="text" class="form-control" placeholder="Ingrese los apellidos">
+                        <input type="text" class="form-control" placeholder="Ingrese los apellidos" name="apellido">
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group col-12 col-md-6">
                         <label for="">Edad</label>
-                        <input type="number" class="form-control" placeholder="Ingrese la edad">
+                        <input type="number" class="form-control" placeholder="Ingrese la edad" name="edad">
                     </div>
                     <div class="form-group col-12 col-md-6">
                         <label for="">Celular</label>
-                        <input type="text" class="form-control" placeholder="Ingrese un número de celular">
+                        <input type="text" class="form-control" placeholder="Ingrese un número de celular" name="celular">
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group col-12">
                         <label for="">Correo</label>
-                        <input type="email" class="form-control" placeholder="Ingrese el correo electrónico">
+                        <input type="email" class="form-control" placeholder="Ingrese el correo electrónico" name="correo">
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group col-12 col-md-6">
                         <label for="">Contraseña</label>
-                        <input type="password" class="form-control" placeholder="Ingrese una contraseña">
+                        <input type="password" class="form-control" placeholder="Ingrese una contraseña" name="contrasena">
                     </div>
                     <div class="form-group col-12 col-md-6">
                         <label for="">Confirmar contraseña</label>
-                        <input type="password" class="form-control" placeholder="Ingrese nuevamente la contraseña">
+                        <input type="password" class="form-control" placeholder="Ingrese nuevamente la contrasena">
                     </div>
                 </div>
 
