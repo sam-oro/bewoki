@@ -2,10 +2,10 @@
     include "../conexion/conexion.php";
     session_start();
     if(!isset($_SESSION['rol'])){
-        header('location: ../../vistas/login/iniciar_sesion.php');
+        header('location: ../../vistas/usuario/iniciar_sesion.php');
     }else{
         if($_SESSION['rol'] !=1 ){
-            header('location: ../../vistas/login/iniciar_sesion.php');
+            header('location: ../../vistas/usuario/iniciar_sesion.php');
         }else{
             include '../../includes/header_admin.php';
         }
