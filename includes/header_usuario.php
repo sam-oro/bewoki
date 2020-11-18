@@ -17,14 +17,14 @@
 <!-- Font Awesome -->
 <script src="https://kit.fontawesome.com/f599362e7b.js" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="../css/estilos.css">
-<link rel="stylesheet" href="../css/estilos4.css">
+<link rel="stylesheet" href="<?php echo  $URL ?>css/estilos.css">
+<link rel="stylesheet" href="<?php echo  $URL ?>css/estilos4.css">
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-nav">
         <div class="col-sm-3 text-center">
-            <a class="navbar-brand" href="../../index.php">
-                <img src="../../img/logo.png" alt="">
+            <a class="navbar-brand" href="<?php echo  $URL ?>index.php">
+                <img src="<?php echo  $URL ?>img/logo.png" alt="">
             </a>
         </div>
 
@@ -36,20 +36,20 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav hola ml-auto">
                 <li class="nav-item ">
-                    <a class="nav-link" href="../../index.php">Inicio</span></a>
+                    <a class="nav-link" href="<?php echo  $URL ?>index.php">Inicio</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="conocenos.php">Conócenos</a>
+                    <a class="nav-link" href="<?php echo  $URL ?>vistas/conocenos/conocenos.php">Conócenos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../informate/informate.php">Informate</a>
+                    <a class="nav-link" href="<?php echo  $URL ?>vistas/informate/informate.php">Informate</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Eventos-Tour</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href=../aliados/aliados.php>Aliados </a> </li> <li class="nav-item">
-                        <a class="nav-link" href="../materialturistico/turistico.php">Material Turistico</a>
+                    <a class="nav-link" href="<?php echo  $URL ?>vistas/aliados/aliados.php">Aliados </a> </li> <li class="nav-item">
+                        <a class="nav-link" href="<?php echo  $URL ?>vistas/materialturistico/turistico.php">Material Turistico</a>
                 </li>
                 <div class="btn-group">
                     <button type="button" class="btn btn-invi dropdown-toggle" data-toggle="dropdown"
@@ -60,7 +60,7 @@
                         <button class="dropdown-item" type="button">Mi Perfil</button>
                         <button class="dropdown-item" type="button">Configuración</button>
                         <div class="dropdown-divider"></div>
-                        <button class="dropdown-item" type="button">Cerrar Sección</button>
+                        <a class="nav-link" href="<?php echo  $URL ?>vistas/usuario/cerrar_sesion/cerrar_sesion.php"><button class="dropdown-item" type="button">Cerrar sesión</button></a>
                     </div>
                 </div>
             </ul>

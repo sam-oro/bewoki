@@ -4,20 +4,20 @@ include 'admin/conexion/conexion.php';
 
 session_start();
         if(!isset($_SESSION['rol'])){
-            include 'vistas/includes/header_inicio.php';
+            include 'includes/header_inicio.php';
         }else{
             if($_SESSION['rol'] !=1 ){
-                if($_SESSION['rol'] =2 ){
-                    include 'vistas/includes/header_usuario.php';
+                if($_SESSION['rol'] ==2 ){
+                    include 'includes/header_usuario.php';
                 }else {
-                    if($_SESSION['rol']=3){
-                        include 'vistas/includes/header_vendedor.php';
+                    if($_SESSION['rol']==3){
+                        include 'includes/header_vendedor.php';
                     }else {
-                        include 'vistas/includes/header-inicio.php';
+                        include 'includes/header_inicio.php';
                     } 
                 }
             }else {
-                include 'vistas/includes/header-inicio.php';
+                include 'includes/header_admin.php';
             }            
         }
 
@@ -45,56 +45,6 @@ session_start();
 <link rel="stylesheet" href="css/estilos2.css">
 
 <body>
-    <section class="">
-        <nav class="navbar navbar-expand-lg navbar-light bg-nav">
-            <div class="col-sm-3 text-center">
-                <a class="navbar-brand" href="index.php">
-                    <img src="img/logo.png" alt="">
-                </a>
-            </div>
-
-            <button class="navbar-toggler col-sm-3 ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav hola ml-auto">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="index.php">Inicio</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="vistas/conocenos/conocenos.php">Conócenos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="vistas/informate/informate.php">Informate</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Eventos-Tour</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="vistas/aliados/aliados.php">Aliados</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="vistas/materialturistico/turistico.php">Material Turistico</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="vistas/usuario/form_usuario.php">Registar Usuario</a>
-                    </li>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-invi dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
-                            Perfil
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
-                            <a style="text-decoration: none;" href="vistas/perfil/perfil.php"><button class="dropdown-item" type="button">Mi Perfil</button></a>
-                            <button class="dropdown-item" type="button">Configuración</button>
-                            <div class="dropdown-divider"></div>
-                            <button class="dropdown-item" type="button">Cerrar Sección</button>
-                        </div>
-                    </div>
-                </ul>
-            </div>
-        </nav>
-    </section>
-
     <section class="sldier">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -139,12 +89,15 @@ session_start();
 
 
                 <?php
-                if($_SESSION['rol']==1){
-                echo ' <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                Cambiar Video
-                </button>';
-                
+
+                if (isset($_SESSION['rol'])) {
+                    if($_SESSION['rol']==1){
+                        echo ' <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Cambiar Video
+                        </button>';
+                        
                     }
+                }
                 ?>
 
 

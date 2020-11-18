@@ -7,7 +7,6 @@ $apellido=$_POST['apellido'];;
 $correo=$_POST['correo'];
 $contra=$_POST['contrasena'];
 $edad=$_POST['edad'];
-$direccion=$_POST['direccion'];
 $celular=$_POST['celular'];
 
 

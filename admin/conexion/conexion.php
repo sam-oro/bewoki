@@ -10,4 +10,6 @@
         $conn = new MongoDB\Client($cadenaConexion);
         return $conn->selectDatabase($nombreBD);
     }
+
+    $URL = "http://localhost/GIT/bewoki/";
 ?>
