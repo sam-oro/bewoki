@@ -11,5 +11,5 @@
         return $conn->selectDatabase($nombreBD);
     }
 
-    $URL = "http://localhost/GIT/bewoki/";
+    $URL = "http://localhost/bewoki/";
 ?>

@@ -1,3 +1,27 @@
+<?php
+
+include '../../admin/conexion/conexion.php';
+
+session_start();
+        if(!isset($_SESSION['rol'])){
+            include '../../includes/header_inicio.php';
+        }else{
+            if($_SESSION['rol'] !=1 ){
+                if($_SESSION['rol'] ==2 ){
+                    include '../../includes/header_usuario.php';
+                }else {
+                    if($_SESSION['rol']==3){
+                        include '../../includes/header_vendedor.php';
+                    }else {
+                        include '../../includes/header_inicio.php';
+                    } 
+                }
+            }else {
+                include '../../includes/header_admin.php';
+            }            
+        }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,12 +44,6 @@
 <link rel="stylesheet" href="../../css/estilos4.css">
 
 <body>
-
-<?php
-
-    include '../../includes/header_inicio.php'
-
-?>
 
     <section>
         <div class="container">

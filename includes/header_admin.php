@@ -57,7 +57,7 @@
                         Admin
                     </button>
                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
-                        <button class="dropdown-item" type="button">Panel admin</button>
+                    <a class="nav-link" href="<?php echo  $URL ?>admin/asistente/form_asistente.php"><button class="dropdown-item" type="button">Panel admin</button></a>
                         <div class="dropdown-divider"></div>
                         <a class="nav-link" href="<?php echo  $URL ?>vistas/usuario/cerrar_sesion/cerrar_sesion.php"><button class="dropdown-item" type="button">Cerrar sesión</button></a>
                     </div>

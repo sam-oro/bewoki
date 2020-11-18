@@ -1,5 +1,5 @@
 <?php
-    include "../conexion.php";
+    include "../conexion/conexion.php";
     session_start();
     if(!isset($_SESSION['rol'])){
         header('location: ../../vistas/login/iniciar_sesion.php');
@@ -7,7 +7,7 @@
         if($_SESSION['rol'] !=1 ){
             header('location: ../../vistas/login/iniciar_sesion.php');
         }else{
-            include '../../vistas/header-admin.php';
+            include '../../includes/header_admin.php';
         }
     }
 ?>

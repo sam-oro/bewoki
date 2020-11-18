@@ -1,3 +1,27 @@
+<?php
+
+include '../../../admin/conexion/conexion.php';
+
+session_start();
+        if(!isset($_SESSION['rol'])){
+            include '../../../includes/header_inicio.php';
+        }else{
+            if($_SESSION['rol'] !=1 ){
+                if($_SESSION['rol'] ==2 ){
+                    include '../../../includes/header_usuario.php';
+                }else {
+                    if($_SESSION['rol']==3){
+                        include '../../../includes/header_vendedor.php';
+                    }else {
+                        include '../../../includes/header_inicio.php';
+                    } 
+                }
+            }else {
+                include '../../../includes/header_admin.php';
+            }            
+        }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,52 +41,6 @@
 <link rel="stylesheet" href="../../../css/estilos.css">
 </head>
 <body>
-<section class="">
-        <nav class="navbar navbar-expand-lg navbar-light bg-nav">
-            <div class="col-sm-3 text-center">
-                <a class="navbar-brand" href="../../../index.php">
-                    <img src="../../../img/logo.png" alt="">
-                </a>
-            </div>
-
-            <button class="navbar-toggler col-sm-3 ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav hola ml-auto">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="index.php">Inicio</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="vistas/conocenos.php">Conócenos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Informate</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Eventos-Tour</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Aliados</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Material Turistico</a>
-                    </li>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-invi dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
-                            Perfil
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
-                            <button class="dropdown-item" type="button">Mi Perfil</button>
-                            <button class="dropdown-item" type="button">Configuración</button>
-                            <div class="dropdown-divider"></div>
-                            <button class="dropdown-item" type="button">Cerrar Sesión</button>
-                        </div>
-                    </div>
-                </ul>
-            </div>
-        </nav>
-    </section>
 
     <section>
         <div class="contenedor col-12"> 
