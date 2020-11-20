@@ -29,25 +29,24 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Material Turistico</title>
+
+    <!--importacion boostrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f599362e7b.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../css/estilos.css">
 </head>
-
-<!--importacion boostrap-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
-
-<!-- Font Awesome -->
-<script src="https://kit.fontawesome.com/f599362e7b.js" crossorigin="anonymous"></script>
-
-<link rel="stylesheet" href="../../css/estilos.css">
-
 <body>
 
     <section>
         <div class="contenedor m-4 cards-info">
-            <div class="row text-center tarjeta col-12">
-                <div class="card text-center col-md-6">
+            <div class="row text-center col-12">
+                <div class="card text-center tarjeta col-md-6">
                     <div class="card-header">
                         #####
                     </div>
@@ -58,45 +57,7 @@ session_start();
                         ####
                     </div>
                 </div>
-                <div class="card text-center col-md-6">
-                    <div class="card-header">
-                        #####
-                    </div>
-                    <div class="card-body bg-info" style="background-image: url( '../../img/rioclaro.jpg')">
-                        <h3 class="card-title ">Río Claro (Antioquia)</h3>
-                    </div>
-                    <div class="card-footer text-muted ">
-                        ####
-                    </div>
-                </div>
-
-                <div class="card text-center col-md-6">
-                    <div class="card-header">
-                        #####
-                    </div>
-                    <div class="card-body bg-info" style="background-image: url( '../../img/volcan.jpg')">
-                        <h3 class="card-title ">Volcán De Lodo (Arboletes)</h3>
-                    </div>
-                    <div class="card-footer text-muted ">
-                        ####
-                    </div>
-                </div>
-
-                <div class="card text-center col-md-6">
-                    <div class="card-header">
-                        #####
-                    </div>
-                    <div class="card-body bg-info" style="background-image: url( '../../img/ecoparque.jpg')">
-                        <h3 class="card-title ">Eco-Parque El Gaitero</h3>
-                    </div>
-                    <div class="card-footer text-muted ">
-                        ####
-                    </div>
-                </div>
-
-
             </div>
-
         </div>
     </section>
 

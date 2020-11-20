@@ -29,19 +29,18 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    
+    <!--importacion boostrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f599362e7b.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../css/estilos.css">
 </head>
-
-<!--importacion boostrap-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
-
-<!-- Font Awesome -->
-<script src="https://kit.fontawesome.com/f599362e7b.js" crossorigin="anonymous"></script>
-
-<link rel="stylesheet" href="../../css/estilos.css">
-
 <body>
 
     <section>
@@ -50,7 +49,20 @@ session_start();
                 <h1>Lugares recomendados</h1>
             </div>
             <div class="row col-md-12">
-                <div class="card text-center col-md-6">
+                <div class="card text-center tarjeta col-md-6">
+                    <div class="card-header">
+                        Lugar Turistico
+                    </div>
+                    <div class="card-body bg-info" style="background-image: url( '../../img/pexels-tobi-518557.jpg')">
+                        <h3 class="card-title ">Titulo del lugar</h3>
+                        <!-- <p class="card-text ">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="# " class="btn btn-primary ">Go somewhere</a> -->
+                    </div>
+                    <div class="card-footer text-muted ">
+                        Ubicación
+                    </div>
+                </div>
+                <div class="card text-center tarjeta col-md-6">
                     <div class="card-header">
                         Lugar Turistico
                     </div>
@@ -74,7 +86,7 @@ session_start();
                 <h1>Lugares </h1>
             </div>
             <div class="row col-md-12">
-                <div class="card text-center col-md-6">
+                <div class="card text-center tarjeta col-md-6">
                     <div class="card-header">
                         Lugar Turistico
                     </div>

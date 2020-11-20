@@ -229,7 +229,7 @@ session_start();
                         <a style="text-decoration: none;" href="vistas/contacto/contactenos.php">
                             <div class="vinculo">
                                 <img class="img_valores" src="img/index-icon-04.svg" alt="">
-                                <h3 class="titulo">Contactanos</h3>
+                                <h3 class="titulo">Contáctenos</h3>
                             </div>
                         </a>
                     </div>
