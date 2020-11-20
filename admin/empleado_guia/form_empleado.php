@@ -112,6 +112,54 @@
         <button type="submit" class="btn btn-color">Enviar</button>
         </div>
         </form>
+
+        <table class="table">
+            <thead>
+                <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Cedula</th>
+                <th>telefono</th>
+                <th>celular</th>
+                <th>Contacto</th>
+                <th>Correo</th>
+                <th>Direccion</th>
+                <th>Profesion</th>
+                <th>Experiencia</th>
+                <th>Edad</th>
+                <th>Sexo</th>
+                <th>Ciudad</th>
+            </thead>
+            <tbody>
+            </tr>
+            <?php
+                $baseDeDatos = obtenerBaseDeDatos();
+                $coleccion = $baseDeDatos->Empleado_Guia;
+                $cursor = $coleccion->find();
+
+                foreach ($cursor as $doc){
+                    $row=json_decode(json_encode($doc),true);
+                    echo '<tr>';
+                    echo '<td>'. $row['Nom_empleado']. '</td>' ;
+                    echo '<td>'. $row['Ape_empleado']. '</td>' ;
+                    echo '<td>'. $row['Id_empleado']. '</td>' ;
+                    echo '<td>'. $row['Tel_empleado']. '</td>' ;
+                    echo '<td>'. $row['Mov_empleado']. '</td>' ;
+                    echo '<td>'. $row['Conta_empleado']. '</td>' ;
+                    echo '<td>'. $row['Corr_empleado']. '</td>' ;
+                    echo '<td>'. $row['Dire_empleado']. '</td>' ;
+                    echo '<td>'. $row['Profe_empleado']. '</td>' ;
+                    echo '<td>'. $row['Expe_empleado']. '</td>' ;
+                    echo '<td>'. $row['Edad_empleado']. '</td>' ;
+                    echo '<td>'. $row['Sexo_empleado']. '</td>' ;
+                    echo '<td>'. $row['Ciu_empleado']. '</td>' ;
+                    echo '</tr>';
+
+                    }
+
+                ?>
+                </tbody> 
+                </table>
         </div>
     </div>
 

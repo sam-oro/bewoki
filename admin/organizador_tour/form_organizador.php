@@ -165,6 +165,53 @@
         <button type="submit" class="btn btn-color">Enviar</button>
         </div>
         </form>
+
+        <table class="table">
+            <thead>
+                <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Cedula</th>
+                <th>Usuario</th>
+                <th>celular</th>
+                <th>telefono</th>
+                <th>Correo</th>
+                <th>Direccion</th>
+                <th>Profesion</th>
+                <th>Experiencia</th>
+                <th>Edad</th>
+                <th>Sexo</th>
+            </thead>
+
+            <tbody>
+            </tr>
+            <?php
+                $baseDeDatos = obtenerBaseDeDatos();
+                $coleccion = $baseDeDatos->Organizador_Tour;
+                $cursor = $coleccion->find();
+
+                foreach ($cursor as $doc){
+                    $row=json_decode(json_encode($doc),true);
+                    echo '<tr>';
+                    echo '<td>'. $row['Nom_orga']. '</td>' ;
+                    echo '<td>'. $row['Ape_orga']. '</td>' ;
+                    echo '<td>'. $row['Id_orga']. '</td>' ;
+                    echo '<td>'. $row['Usuario_orga']. '</td>' ;
+                    echo '<td>'. $row['Mov_orga']. '</td>' ;
+                    echo '<td>'. $row['Tel_orga']. '</td>' ;
+                    echo '<td>'. $row['Corr_orga']. '</td>' ;
+                    echo '<td>'. $row['Dire_orga']. '</td>' ;
+                    echo '<td>'. $row['Profe_orga']. '</td>' ;
+                    echo '<td>'. $row['Expe_orga']. '</td>' ;
+                    echo '<td>'. $row['Edad_orga']. '</td>' ;
+                    echo '<td>'. $row['Sexo_orga']. '</td>' ;
+                    echo '</tr>';
+                    }
+
+                ?>
+                </tbody>
+                </table>
+
         </div>
     </div>
 

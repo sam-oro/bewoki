@@ -76,6 +76,38 @@
         <button type="submit" class="btn btn-color">Enviar</button>
         </div>
         </form>
+
+        <table class="table">
+            <thead>
+                <tr>
+                <th>Nombre del sitio</th>
+                <th>Telefono</th>
+                <th>Correo</th>
+                <th>latitud</th>
+                <th>Longitud</th>
+            </thead>
+
+            <tbody>
+            </tr>
+            <?php
+                $baseDeDatos = obtenerBaseDeDatos();
+                $coleccion = $baseDeDatos->Sitio_Turistico;
+                $cursor = $coleccion->find();
+
+                foreach ($cursor as $doc){
+                    $row=json_decode(json_encode($doc),true);
+                    echo '<tr>';
+                    echo '<td>'. $row['Nom_sitio']. '</td>' ;
+                    echo '<td>'. $row['Tel_sitio']. '</td>' ;
+                    echo '<td>'. $row['Corr_sitio']. '</td>' ;
+                    echo '<td>'. $row['Lat_sitio']. '</td>' ;
+                    echo '<td>'. $row['Lon_sitio']. '</td>' ;
+                    echo '</tr>';
+                    }
+
+                ?>
+                </tbody>
+                </table>
         </div>
     </div>
     <!-- Optional JavaScript -->

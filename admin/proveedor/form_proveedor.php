@@ -89,6 +89,40 @@
         <button type="submit" class="btn btn-color">Enviar</button>
         </div>
         </form>
+        <table class="table">
+            <thead>
+                <tr>
+                <th>Identificación</th>
+                <th>RUT</th>
+                <th>Nombre</th>
+                <th>celular</th>
+                <th>telefono</th>
+                <th>Direccion</th>
+                <th>Ubicacion</th>
+            </thead>
+
+            <tbody>
+            </tr>
+            <?php
+                $baseDeDatos = obtenerBaseDeDatos();
+                $coleccion = $baseDeDatos->Proveedor;
+                $cursor = $coleccion->find();
+
+                foreach ($cursor as $doc){
+                    $row=json_decode(json_encode($doc),true);
+                    echo '<tr>';
+                    echo '<td>'. $row['RUT_prove']. '</td>' ;
+                    echo '<td>'. $row['Nom_prove']. '</td>' ;
+                    echo '<td>'. $row['Mov_prove']. '</td>' ;
+                    echo '<td>'. $row['Tel_prove']. '</td>' ;
+                    echo '<td>'. $row['corr_prove']. '</td>' ;
+                    echo '<td>'. $row['Dire_prove']. '</td>' ;
+                    echo '</tr>';
+                    }
+
+                ?>
+                </tbody>
+                </table>
         </div>
     </div>
 

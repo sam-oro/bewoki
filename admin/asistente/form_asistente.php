@@ -80,29 +80,41 @@
                     <button type="submit" class="btn btn-color text-center">Enviar</button>
                 </div>
 
-                
-
             </form>
-        </div>
-    </div>
 
-                <?php
-                include '../conexion/conexion.php';
+            <table class="table">
+                <thead>
+                    <tr>
+                    <th>documento</th>
+                    <th>Nombre</th>
+                    <th>movil</th>
+                    <th>correo</th>
+                </thead>
+            <tbody>
+                    </tr>
+            <?php
                 $baseDeDatos = obtenerBaseDeDatos();
                 $coleccion = $baseDeDatos->Asistente;
                 $cursor = $coleccion->find();
 
-                foreach ( $cursor as $id => $valor )
-                {   
-                $row=json_decode(json_encode($valor),true);
+                foreach ($cursor as $doc){
+                    $row=json_decode(json_encode($doc),true);
+                    echo '<tr>';
+                    echo '<td>'. $row['documento']. '</td>' ;
+                    echo '<td>'. $row['Nombre']. '</td>' ;
+                    echo '<td>'. $row['movil']. '</td>' ;
+                    echo '<td>'. $row['correo']. '</td>' ;
+                    echo '</tr>';
 
-
-                 echo ($row['documento']);
-                 echo '<br>';
-
-                }
-
+                    }
                 ?> 
+                </tbody> 
+                </table>
+
+        </div>
+    </div>  
+
+                
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -113,3 +125,5 @@
 </body>
 
 </html>
+
+
