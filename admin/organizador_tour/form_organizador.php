@@ -181,18 +181,23 @@
                 <th>Experiencia</th>
                 <th>Edad</th>
                 <th>Sexo</th>
+                <th></th>
             </thead>
 
             <tbody>
-            </tr>
+                </tr>
             <?php
                 $baseDeDatos = obtenerBaseDeDatos();
                 $coleccion = $baseDeDatos->Organizador_Tour;
                 $cursor = $coleccion->find();
 
+                $con=0;
+
                 foreach ($cursor as $doc){
                     $row=json_decode(json_encode($doc),true);
+                    $con++;
                     echo '<tr>';
+                    echo '<td hidden>'. $row['_id']['$oid']. '</td>' ;
                     echo '<td>'. $row['Nom_orga']. '</td>' ;
                     echo '<td>'. $row['Ape_orga']. '</td>' ;
                     echo '<td>'. $row['Id_orga']. '</td>' ;
@@ -205,11 +210,75 @@
                     echo '<td>'. $row['Expe_orga']. '</td>' ;
                     echo '<td>'. $row['Edad_orga']. '</td>' ;
                     echo '<td>'. $row['Sexo_orga']. '</td>' ;
+                    ?>
+                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal<?php echo $con; ?>" id="ingresar">Editar</button></td>
+                    <?php
                     echo '</tr>';
-                    }
+                    ?>
 
-                ?>
-                </tbody>
+                    <div class="modal" tabindex="-1" role="dialog" id="modal<?php echo $con; ?>">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Actualizar Organizador</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="actualizar_organizador.php" method="POST">
+                                        <input type="text" name="id" value=<?php echo $row['_id']['$oid']?> hidden>
+                                        <br>
+                                        <label>documento</label>
+                                        <input type="text" name="documento" value=<?php echo $row['Id_orga']?>>
+                                        <br>
+                                        <label>Nombre</label>
+                                        <input type="text" name="nombre" value=<?php echo $row['Nom_orga'] ?>>
+                                        <br>
+                                        <label>Apellidos</label>
+                                        <input type="text" name="apellidos" value=<?php echo $row['Ape_orga'] ?>>
+                                        <br>
+                                        <label>Usuario</label>
+                                        <input type="text" name="usuario" value=<?php echo $row['Usuario_orga'] ?>>
+                                        <br>
+                                        <label>movil</label>
+                                        <input type="text" name="movil" value=<?php echo $row['Mov_orga'] ?>>
+                                        <br> 
+                                        <label>Telefono</label>
+                                        <input type="text" name="telefono" value=<?php echo $row['Tel_orga'] ?>>
+                                        <br>  
+                                        <label>correo</label>
+                                        <input type="text" name="correo" value=<?php echo $row['Corr_orga'] ?>>
+                                        <br>
+                                        <label>Direccion</label>
+                                        <input type="text" name="direccion" value=<?php echo $row['Dire_orga'] ?>>
+                                        <br> 
+                                        <label>Profesion</label>
+                                        <input type="text" name="profesion" value=<?php echo $row['Profe_orga'] ?>>
+                                        <br> 
+                                        <label>Experiencia</label>
+                                        <input type="text" name="experiencia" value=<?php echo $row['Expe_orga'] ?>>
+                                        <br> 
+                                        <label>Edad</label>
+                                        <input type="text" name="edad" value=<?php echo $row['Edad_orga'] ?>>
+                                        <br> 
+                                        <label>Sexo</label>
+                                        <input type="text" name="sexo" value=<?php echo $row['Sexo_orga'] ?>>
+                                        <br> 
+                                        <button type="submit" class="btn btn-primary">Actualizar</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>       
+                                        
+                                        </form>
+                                        
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <?php
+                                            }
+                                        ?> 
+
+                    </tbody>
                 </table>
 
         </div>
