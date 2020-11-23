@@ -85,75 +85,72 @@
             <table class="table">
                 <thead>
                     <tr>
-                    
-                    <th>documento</th>
-                    <th>Nombre</th>
-                    <th>movil</th>
-                    <th>correo</th>
-                    <th></th>
+                        <th>documento</th>
+                        <th>Nombre</th>
+                        <th>movil</th>
+                        <th>correo</th>
+                        <th></th>
+                    <tr>
                 </thead>
-            <tbody>
-                    </tr>
-            <?php
-                $baseDeDatos = obtenerBaseDeDatos();
-                $coleccion = $baseDeDatos->Asistente;
-                $cursor = $coleccion->find();
-
-                $con=0;
-
-                foreach ($cursor as $doc){
-                    $row=json_decode(json_encode($doc),true);
-                    $con++;
-                    echo '<tr>';
-                    echo '<td hidden>'. $row['_id']['$oid']. '</td>' ;
-                    echo '<td>'. $row['documento']. '</td>' ;
-                    echo '<td>'. $row['Nombre']. '</td>' ;
-                    echo '<td>'. $row['movil']. '</td>' ;
-                    echo '<td>'. $row['correo']. '</td>' ;
-                    ?>
-                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal<?php echo $con; ?>" id="ingresar">Editar</button></td>
+                <tbody>
                     <?php
-                    echo '</tr>';
-                    ?>
-                    <div class="modal" tabindex="-1" role="dialog" id="modal<?php echo $con; ?>">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Actualizar Asistente</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form action="actualizar_asistente.php" method="POST">
-                                        <input type="text" name="id" value=<?php echo $row['_id']['$oid']?> hidden>
-                                        <br>
-                                        <label>documento</label>
-                                        <input type="text" name="documento" value=<?php echo $row['documento']?> disabled>
-                                        <br>
-                                        <label>nombre</label>
-                                        <input type="text" name="nombre" value=<?php echo $row['Nombre'] ?>>
-                                        <br>
-                                        <label>movil</label>
-                                        <input type="text" name="movil" value=<?php echo $row['movil'] ?>>
-                                        <br>  
-                                        <label>correo</label>
-                                        <input type="text" name="correo" value=<?php echo $row['correo'] ?>>
-                                        <br>
-                                        <button type="submit" class="btn btn-primary">Actualizar</button>
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>       
-                                        
-                                        </form>
-                                        
-                                    </div>
+                        $baseDeDatos = obtenerBaseDeDatos();
+                        $coleccion = $baseDeDatos->Asistente;
+                        $cursor = $coleccion->find();
+
+                        $con=0;
+
+                        foreach ($cursor as $doc){
+                            $row=json_decode(json_encode($doc),true);
+                            $con++;
+                            echo '<tr>';
+                            echo '<td hidden>'. $row['_id']['$oid']. '</td>' ;
+                            echo '<td>'. $row['documento']. '</td>' ;
+                            echo '<td>'. $row['Nombre']. '</td>' ;
+                            echo '<td>'. $row['movil']. '</td>' ;
+                            echo '<td>'. $row['correo']. '</td>' ;
+                            ?>
+                            <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal<?php echo $con; ?>" id="ingresar">Editar</button></td>
+                            <?php
+                            echo '</tr>';
+                            ?>
+                            <div class="modal" tabindex="-1" role="dialog" id="modal<?php echo $con; ?>">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Actualizar Asistente</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="actualizar_asistente.php" method="POST">
+                                                <input type="text" name="id" value=<?php echo $row['_id']['$oid']?> hidden>
+                                                <br>
+                                                <label>documento</label>
+                                                <input type="text" name="documento" value=<?php echo $row['documento']?> disabled>
+                                                <br>
+                                                <label>nombre</label>
+                                                <input type="text" name="nombre" value=<?php echo $row['Nombre'] ?>>
+                                                <br>
+                                                <label>movil</label>
+                                                <input type="text" name="movil" value=<?php echo $row['movil'] ?>>
+                                                <br>  
+                                                <label>correo</label>
+                                                <input type="text" name="correo" value=<?php echo $row['correo'] ?>>
+                                                <br>
+                                                <button type="submit" class="btn btn-primary">Actualizar</button>
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>     
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
-                                </div>
-                                <?php
-                                            }
-                                        ?> 
-                                        </tbody> 
-                                        </table>
+                            </div>
+                    <?php
+                            }
+                    ?> 
+                </tbody> 
+            </table>
 
         </div>
     </div>  

@@ -263,7 +263,29 @@
                                         <input type="text" name="edad" value=<?php echo $row['Edad_orga'] ?>>
                                         <br> 
                                         <label>Sexo</label>
-                                        <input type="text" name="sexo" value=<?php echo $row['Sexo_orga'] ?>>
+                                        <select name="sexo">
+                                            <?php
+                                            if ($row['Sexo_orga']=="Hombre"){
+                                                ?>
+                                                <option value="Hombre" selected>Hombre</option>
+                                                <option value="Mujero">Mujer</option>
+                                                <option value="Otro">Otro</option>
+                                                <?php
+                                            }elseif ($row['Sexo_orga']=="Mujer"){
+                                                ?>
+                                                <option value="Hombre">Hombre</option>
+                                                <option value="Mujero" selected>Mujer</option>
+                                                <option value="Otro">Otro</option>
+                                                <?php
+                                            }else{
+                                                ?>
+                                                <option value="Hombre">Hombre</option>
+                                                <option value="Mujero">Mujer</option>
+                                                <option value="Otro" selected>Otro</option>
+                                                <?php
+                                            }
+                                            ?>
+                                        </select>
                                         <br> 
                                         <button type="submit" class="btn btn-primary">Actualizar</button>
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>       

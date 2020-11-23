@@ -85,6 +85,7 @@
                 <th>Correo</th>
                 <th>latitud</th>
                 <th>Longitud</th>
+                <th></th>
             </thead>
 
             <tbody>
@@ -94,20 +95,62 @@
                 $coleccion = $baseDeDatos->Sitio_Turistico;
                 $cursor = $coleccion->find();
 
+                $con=0;
+
                 foreach ($cursor as $doc){
                     $row=json_decode(json_encode($doc),true);
+                    $con++;
                     echo '<tr>';
                     echo '<td>'. $row['Nom_sitio']. '</td>' ;
                     echo '<td>'. $row['Tel_sitio']. '</td>' ;
                     echo '<td>'. $row['Corr_sitio']. '</td>' ;
                     echo '<td>'. $row['Lat_sitio']. '</td>' ;
                     echo '<td>'. $row['Lon_sitio']. '</td>' ;
+                    ?>
+                    <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal<?php echo $con; ?>" id="ingresar">Editar</button></td>
+                    <?php
                     echo '</tr>';
-                    }
-
-                ?>
+                    ?>
+                    <div class="modal" tabindex="-1" role="dialog" id="modal<?php echo $con; ?>">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Actualizar Asistente</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="actualizar_sitio.php" method="POST">
+                                        <input type="text" name="id" value=<?php echo $row['_id']['$oid']?> hidden>
+                                        <br>
+                                        <label>Nombre</label>
+                                        <input type="text" name="nombre" value="<?php echo $row['Nom_sitio'] ?>">
+                                        <br>
+                                        <label>Telefono</label>
+                                        <input type="text" name="tel" value="<?php echo $row['Tel_sitio'] ?>">
+                                        <br>
+                                        <label>Correo</label>
+                                        <input type="text" name="correo" value="<?php echo $row['Corr_sitio']?>">
+                                        <br>
+                                        <label>Latitud</label>
+                                        <input type="text" name="lat" value=<?php echo $row['Lat_sitio'] ?>>
+                                        <br>  
+                                        <label>Longitud</label>
+                                        <input type="text" name="long" value=<?php echo $row['Lon_sitio'] ?>>
+                                        <br>
+                                        <button type="submit" class="btn btn-primary">Actualizar</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>     
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php
+                }
+                ?> 
                 </tbody>
-                </table>
+            </table>
         </div>
     </div>
     <!-- Optional JavaScript -->

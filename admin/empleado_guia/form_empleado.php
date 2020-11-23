@@ -50,120 +50,206 @@
             </div>
         </div>
         <div class="container formularios col-9">
-        <form action="guardar_empleado.php" method="POST" class="col-12">
-            <h3>Empleado guía</h3>
-        <div class="form-group">
-            <label>Nombre</label>
-            <input type="text" class="form-control" name="nombre">
-        </div>
-        <div class="form-group">
-            <label>Apellidos</label>
-            <input type="text" class="form-control" name="apellido">
-        </div>
-        <div class="form-group">
-            <label>Identificación</label>
-            <input type="text" class="form-control" name="id">
-        </div>
-        <div class="form-group">
-            <label>Teléfono</label>
-            <input type="text" class="form-control" name="telefono">
-        </div>
-        <div class="form-group">
-            <label>Celular</label>
-            <input type="text" class="form-control" name="celular">
-        </div>
-        <div class="form-group">
-            <label>Contacto</label>
-            <input type="text" class="form-control" name="contacto">
-        </div>
-        <div class="form-group">
-            <label>Correo</label>
-            <input type="email" class="form-control" name="correo">
-        </div>
-        <div class="form-group">
-            <label>Dirección</label>
-            <input type="text" class="form-control" name="direccion">
-        </div>
-        <div class="form-group">
-            <label>Profesión</label>
-            <input type="text" class="form-control" name="profesion">
-        </div>
-        <div class="form-group">
-            <label>Experiencia</label>
-            <input type="text" class="form-control" name="experiencia">
-        </div>
-        <div class="form-group">
-            <label>Edad</label>
-            <input type="number" class="form-control" name="edad">
-        </div>
-        <div class="form-group">
-            <label>Sexo</label>
-            <select type="text" class="form-control" name="sexo">
-                <option value="Hombre">Hombre</option>
-                <option value="Mujer">Mujer</option>
-                <option value="Otro">Otro</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label>Ciudad</label>
-            <input type="text" class="form-control" name="ciudad">
-        </div>
-        <div class="text-center">
-        <button type="submit" class="btn btn-color">Enviar</button>
-        </div>
-        </form>
+            <form action="guardar_empleado.php" method="POST" class="col-12">
+                <h3>Empleado guía</h3>
+                <div class="form-group">
+                    <label>Nombre</label>
+                    <input type="text" class="form-control" name="nombre">
+                </div>
+                <div class="form-group">
+                    <label>Apellidos</label>
+                    <input type="text" class="form-control" name="apellido">
+                </div>
+                <div class="form-group">
+                    <label>Identificación</label>
+                    <input type="text" class="form-control" name="id">
+                </div>
+                <div class="form-group">
+                    <label>Teléfono</label>
+                    <input type="text" class="form-control" name="telefono">
+                </div>
+                <div class="form-group">
+                    <label>Celular</label>
+                    <input type="text" class="form-control" name="celular">
+                </div>
+                <div class="form-group">
+                    <label>Contacto</label>
+                    <input type="text" class="form-control" name="contacto">
+                </div>
+                <div class="form-group">
+                    <label>Correo</label>
+                    <input type="email" class="form-control" name="correo">
+                </div>
+                <div class="form-group">
+                    <label>Dirección</label>
+                    <input type="text" class="form-control" name="direccion">
+                </div>
+                <div class="form-group">
+                    <label>Profesión</label>
+                    <input type="text" class="form-control" name="profesion">
+                </div>
+                <div class="form-group">
+                    <label>Experiencia</label>
+                    <input type="text" class="form-control" name="experiencia">
+                </div>
+                <div class="form-group">
+                    <label>Edad</label>
+                    <input type="number" class="form-control" name="edad">
+                </div>
+                <div class="form-group">
+                    <label>Sexo</label>
+                    <select type="text" class="form-control" name="sexo">
+                        <option value="Hombre">Hombre</option>
+                        <option value="Mujer">Mujer</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Ciudad</label>
+                    <input type="text" class="form-control" name="ciudad">
+                </div>
+                <div class="text-center">
+                <button type="submit" class="btn btn-color">Enviar</button>
+                </div>
+            </form>
 
-        <table class="table">
-            <thead>
-                <tr>
-                <th>Nombre</th>
-                <th>Apellidos</th>
-                <th>Cedula</th>
-                <th>telefono</th>
-                <th>celular</th>
-                <th>Contacto</th>
-                <th>Correo</th>
-                <th>Direccion</th>
-                <th>Profesion</th>
-                <th>Experiencia</th>
-                <th>Edad</th>
-                <th>Sexo</th>
-                <th>Ciudad</th>
-            </thead>
-            <tbody>
-            </tr>
-            <?php
-                $baseDeDatos = obtenerBaseDeDatos();
-                $coleccion = $baseDeDatos->Empleado_Guia;
-                $cursor = $coleccion->find();
+            <table class="table">
+                <thead>
+                    <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Cedula</th>
+                    <th>telefono</th>
+                    <th>celular</th>
+                    <th>Contacto</th>
+                    <th>Correo</th>
+                    <th>Direccion</th>
+                    <th>Profesion</th>
+                    <th>Experiencia</th>
+                    <th>Edad</th>
+                    <th>Sexo</th>
+                    <th>Ciudad</th>
+                    <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php
+                    $baseDeDatos = obtenerBaseDeDatos();
+                    $coleccion = $baseDeDatos->Empleado_Guia;
+                    $cursor = $coleccion->find();
 
-                foreach ($cursor as $doc){
-                    $row=json_decode(json_encode($doc),true);
-                    echo '<tr>';
-                    echo '<td>'. $row['Nom_empleado']. '</td>' ;
-                    echo '<td>'. $row['Ape_empleado']. '</td>' ;
-                    echo '<td>'. $row['Id_empleado']. '</td>' ;
-                    echo '<td>'. $row['Tel_empleado']. '</td>' ;
-                    echo '<td>'. $row['Mov_empleado']. '</td>' ;
-                    echo '<td>'. $row['Conta_empleado']. '</td>' ;
-                    echo '<td>'. $row['Corr_empleado']. '</td>' ;
-                    echo '<td>'. $row['Dire_empleado']. '</td>' ;
-                    echo '<td>'. $row['Profe_empleado']. '</td>' ;
-                    echo '<td>'. $row['Expe_empleado']. '</td>' ;
-                    echo '<td>'. $row['Edad_empleado']. '</td>' ;
-                    echo '<td>'. $row['Sexo_empleado']. '</td>' ;
-                    echo '<td>'. $row['Ciu_empleado']. '</td>' ;
-                    echo '</tr>';
+                    $con=0;
 
+                    foreach ($cursor as $doc){
+                        $row=json_decode(json_encode($doc),true);
+                        $con++;
+                        echo '<tr>';
+                        echo '<td>'. $row['Nom_empleado']. '</td>' ;
+                        echo '<td>'. $row['Ape_empleado']. '</td>' ;
+                        echo '<td>'. $row['Id_empleado']. '</td>' ;
+                        echo '<td>'. $row['Tel_empleado']. '</td>' ;
+                        echo '<td>'. $row['Mov_empleado']. '</td>' ;
+                        echo '<td>'. $row['Conta_empleado']. '</td>' ;
+                        echo '<td>'. $row['Corr_empleado']. '</td>' ;
+                        echo '<td>'. $row['Dire_empleado']. '</td>' ;
+                        echo '<td>'. $row['Profe_empleado']. '</td>' ;
+                        echo '<td>'. $row['Expe_empleado']. '</td>' ;
+                        echo '<td>'. $row['Edad_empleado']. '</td>' ;
+                        echo '<td>'. $row['Sexo_empleado']. '</td>' ;
+                        echo '<td>'. $row['Ciu_empleado']. '</td>' ;
+                        ?>
+                        <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal<?php echo $con; ?>" id="ingresar">Editar</button></td>
+                        <?php
+                        echo '</tr>';
+                        ?>
+                        <div class="modal" tabindex="-1" role="dialog" id="modal<?php echo $con; ?>">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Actualizar Asistente</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="actualizar_empleado.php" method="POST">
+                                            <input type="text" name="id" value=<?php echo $row['_id']['$oid']?> hidden>
+                                            <br>
+                                            <label>Nombre</label>
+                                            <input type="text" name="nombre" value=<?php echo $row['Nom_empleado'] ?>>
+                                            <br>
+                                            <label>Apellido</label>
+                                            <input type="text" name="apellido" value=<?php echo $row['Ape_empleado'] ?>>
+                                            <br>
+                                            <label>Identificación</label>
+                                            <input type="text" name="doc" value=<?php echo $row['Id_empleado']?> disabled>
+                                            <br>
+                                            <label>Teléfono</label>
+                                            <input type="text" name="tel" value=<?php echo $row['Tel_empleado'] ?>>
+                                            <br>  
+                                            <label>Celular</label>
+                                            <input type="text" name="cel" value=<?php echo $row['Mov_empleado'] ?>>
+                                            <br>
+                                            <label>Contacto</label>
+                                            <input type="text" name="cont" value=<?php echo $row['Conta_empleado'] ?>>
+                                            <br>
+                                            <label>Correo</label>
+                                            <input type="email" name="correo" value=<?php echo $row['Corr_empleado'] ?>>
+                                            <br>
+                                            <label>Dirección</label>
+                                            <input type="text" name="dir" value=<?php echo $row['Dire_empleado'] ?>>
+                                            <br>
+                                            <label>Profesión</label>
+                                            <input type="text" name="prof" value=<?php echo $row['Profe_empleado'] ?>>
+                                            <br>
+                                            <label>Experiencia</label>
+                                            <input type="text" name="exp" value=<?php echo $row['Expe_empleado'] ?>>
+                                            <br>
+                                            <label>Edad</label>
+                                            <input type="number" name="edad" value=<?php echo $row['Edad_empleado'] ?>>
+                                            <br>
+                                            <label>Sexo</label>
+                                            <select name="sexo">
+                                                <?php
+                                                if ($row['Sexo_empleado']=="Hombre"){
+                                                    ?>
+                                                    <option value="Hombre" selected>Hombre</option>
+                                                    <option value="Mujero">Mujer</option>
+                                                    <option value="Otro">Otro</option>
+                                                    <?php
+                                                }elseif ($row['Sexo_empleado']=="Mujer"){
+                                                    ?>
+                                                    <option value="Hombre">Hombre</option>
+                                                    <option value="Mujero" selected>Mujer</option>
+                                                    <option value="Otro">Otro</option>
+                                                    <?php
+                                                }else{
+                                                    ?>
+                                                    <option value="Hombre">Hombre</option>
+                                                    <option value="Mujero">Mujer</option>
+                                                    <option value="Otro" selected>Otro</option>
+                                                    <?php
+                                                }
+                                                ?>
+                                            </select>
+                                            <br>
+                                            <label>Ciudad</label>
+                                            <input type="text" name="ciudad" value=<?php echo $row['Ciu_empleado'] ?>>
+                                            <br>
+                                            <button type="submit" class="btn btn-primary">Actualizar</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>     
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php
                     }
-
-                ?>
+                    ?> 
                 </tbody> 
-                </table>
+            </table>
         </div>
     </div>
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
