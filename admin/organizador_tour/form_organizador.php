@@ -7,7 +7,7 @@
         if($_SESSION['rol'] !=1 ){
             header('location: ../../vistas/usuario/iniciar_sesion.php');
         }else{
-            include '../../includes/header_admin.php';
+            // include '../../includes/header_admin.php';
         }
     }
 ?>
@@ -31,142 +31,87 @@
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- <div class="container">
-        <form action="guardar_organizador.php" method="POST">
-        <div class="form-group">
-            <label>Nombre</label>
-            <input type="text" class="form-control" name="nombre">
-        </div>
-        <div class="form-group">
-            <label>Apellidos</label>
-            <input type="text" class="form-control" name="apellido">
-        </div>
-        <div class="form-group">
-            <label>Identificacion</label>
-            <input type="text" class="form-control" name="id">
-        </div>
-        <div class="form-group">
-            <label>Usuario</label>
-            <input type="text" class="form-control" name="usuario">
-        </div>
-        <div class="form-group">
-            <label>Celular</label>
-            <input type="text" class="form-control" name="celular">
-        </div>
-        <div class="form-group">
-            <label>Telefono</label>
-            <input type="text" class="form-control" name="telefono">
-        </div>
-        <div class="form-group">
-            <label>Correo</label>
-            <input type="email" class="form-control" name="correo">
-        </div>
-        <div class="form-group">
-            <label>Direccion</label>
-            <input type="text" class="form-control" name="direccion">
-        </div>
-        <div class="form-group">
-            <label>Profesion</label>
-            <input type="text" class="form-control" name="profesion">
-        </div>
-        <div class="form-group">
-            <label>Experiencia</label>
-            <input type="text" class="form-control" name="experiencia">
-        </div>
-        <div class="form-group">
-            <label>Edad</label>
-            <input type="number" class="form-control" name="edad">
-        </div>
-        <div class="form-group">
-            <label>Sexo</label>
-            <select type="text" class="form-control" name="sexo">
-                <option value="Hombre">Hombre</option>
-                <option value="Mujer">Mujer</option>
-            </select>
-        </div>
-        <button type="submit" class="btn btn-primary">enviar</button>
-        </form>
-    </div> -->
 
-    <div class="d-flex" id="conten-prin">
-        <!-- Sidebar -->
-        <div id="sidebar-container" class="col-3">
-            <div class="col-3 d-none d-lg-block">
-                <img src="../../img/isologo-blan.png" alt="">
+    <div class="contenedor col-12">
+        <div class="row col-12">
+            <div class="col-3 col-md-3 bg-dark" style="min-height: 100vh;">
+                <div class="col-12 d-none d-lg-block text-center">
+                    <img src="../../img/isologo-blan.png" class="mt-3" style="width: 90%;">
+                </div>
+
+                <div class="menu col-12">
+                    <a href="../asistente/form_asistente.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-apps lead mr-2"></i><h5 class="m-1 navbar-enlaces">Asistente</h5></a>
+                    <a href="../empleado_guia/form_empleado.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-people lead mr-2"></i><h5 class="m-1 navbar-enlaces">Empleado guia</h5></a>
+                    <a href="form_organizador.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-stats lead mr-2"></i><h5 class="m-1 navbar-enlaces">organizador</h5></a>
+                    <a href="../proveedor/form_proveedor.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-person lead mr-2"></i><h5 class="m-1 navbar-enlaces">proveedor</h5></a>
+                    <a href="../sitio/form_sitio.php" class="d-flex text-light p-3 border-0"> <i class="icon ion-md-settings lead mr-2"></i>
+                        <h5 class="m-1 navbar-enlaces">Sitio Turistico</h5>
+                    </a>
+                    <a href=""></a>
+                </div>
             </div>
-            <div class="menu">
-                <a href="../asistente/form_asistente.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-apps lead mr-2"></i><h5 class="m-1 navbar-enlaces">Asistente</h5></a>
-                <a href="../empleado_guia/form_empleado.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-people lead mr-2"></i><h5 class="m-1 navbar-enlaces">Empleado guia</h5></a>
-                <a href="form_organizador.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-stats lead mr-2"></i><h5 class="m-1 navbar-enlaces">organizador</h5></a>
-                <a href="../proveedor/form_proveedor.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-person lead mr-2"></i><h5 class="m-1 navbar-enlaces">proveedor</h5></a>
-                <a href="../sitio/form_sitio.php" class="d-flex text-light p-3 border-0"> <i class="icon ion-md-settings lead mr-2"></i>
-                    <h5 class="m-1 navbar-enlaces">Sitio Turistico</h5>
-                </a>
-                <a href=""></a>
 
-            </div>
-        </div>
-        <div class="container formularios col-9">
-            <h3>Organizador del Tour</h3>
-        <form action="guardar_organizador.php" method="POST" class="col-12">
-        <div class="form-group">
-            <label>Nombre</label>
-            <input type="text" class="form-control" name="nombre">
-        </div>
-        <div class="form-group">
-            <label>Apellidos</label>
-            <input type="text" class="form-control" name="apellido">
-        </div>
-        <div class="form-group">
-            <label>Identificación</label>
-            <input type="text" class="form-control" name="id">
-        </div>
-        <div class="form-group">
-            <label>Usuario</label>
-            <input type="text" class="form-control" name="usuario">
-        </div>
-        <div class="form-group">
-            <label>Celular</label>
-            <input type="text" class="form-control" name="celular">
-        </div>
-        <div class="form-group">
-            <label>Teléfono</label>
-            <input type="text" class="form-control" name="telefono">
-        </div>
-        <div class="form-group">
-            <label>Correo</label>
-            <input type="email" class="form-control" name="correo">
-        </div>
-        <div class="form-group">
-            <label>Dirección</label>
-            <input type="text" class="form-control" name="direccion">
-        </div>
-        <div class="form-group">
-            <label>Profesión</label>
-            <input type="text" class="form-control" name="profesion">
-        </div>
-        <div class="form-group">
-            <label>Experiencia</label>
-            <input type="text" class="form-control" name="experiencia">
-        </div>
-        <div class="form-group">
-            <label>Edad</label>
-            <input type="number" class="form-control" name="edad">
-        </div>
-        <div class="form-group">
-            <label>Sexo</label>
-            <select type="text" class="form-control" name="sexo">
-                <option value="Hombre">Hombre</option>
-                <option value="Mujer">Mujer</option>
-                <option value="Otro">Otro</option>
-            </select>
-        </div>
-        <div class="text-center">
-        <button type="submit" class="btn btn-color">Enviar</button>
-        </div>
-        </form>
+            <div class="col-9">
+                <h3>Organizador del Tour</h3>
+                <form action="guardar_organizador.php" method="POST" class="col-12">
+                    <div class="form-group">
+                        <label>Nombre</label>
+                        <input type="text" class="form-control" name="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label>Apellidos</label>
+                        <input type="text" class="form-control" name="apellido">
+                    </div>
+                    <div class="form-group">
+                        <label>Identificación</label>
+                        <input type="text" class="form-control" name="id">
+                    </div>
+                    <div class="form-group">
+                        <label>Usuario</label>
+                        <input type="text" class="form-control" name="usuario">
+                    </div>
+                    <div class="form-group">
+                        <label>Celular</label>
+                        <input type="text" class="form-control" name="celular">
+                    </div>
+                    <div class="form-group">
+                        <label>Teléfono</label>
+                        <input type="text" class="form-control" name="telefono">
+                    </div>
+                    <div class="form-group">
+                        <label>Correo</label>
+                        <input type="email" class="form-control" name="correo">
+                    </div>
+                    <div class="form-group">
+                        <label>Dirección</label>
+                        <input type="text" class="form-control" name="direccion">
+                    </div>
+                    <div class="form-group">
+                        <label>Profesión</label>
+                        <input type="text" class="form-control" name="profesion">
+                    </div>
+                    <div class="form-group">
+                        <label>Experiencia</label>
+                        <input type="text" class="form-control" name="experiencia">
+                    </div>
+                    <div class="form-group">
+                        <label>Edad</label>
+                        <input type="number" class="form-control" name="edad">
+                    </div>
+                    <div class="form-group">
+                        <label>Sexo</label>
+                        <select type="text" class="form-control" name="sexo">
+                            <option value="Hombre">Hombre</option>
+                            <option value="Mujer">Mujer</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="text-center">
+                    <button type="submit" class="btn btn-color">Enviar</button>
+                    </div>
+                </form>
 
-        <table class="table">
+                <table class="table" style="overflow: scroll;">
             <thead>
                 <tr>
                 <th>Nombre</th>
@@ -228,42 +173,66 @@
                                     <div class="modal-body">
                                         <form action="actualizar_organizador.php" method="POST">
                                         <input type="text" name="id" value=<?php echo $row['_id']['$oid']?> hidden>
-                                        <br>
-                                        <label>documento</label>
-                                        <input type="text" name="documento" value=<?php echo $row['Id_orga']?>>
-                                        <br>
-                                        <label>Nombre</label>
-                                        <input type="text" name="nombre" value=<?php echo $row['Nom_orga'] ?>>
-                                        <br>
-                                        <label>Apellidos</label>
-                                        <input type="text" name="apellidos" value=<?php echo $row['Ape_orga'] ?>>
-                                        <br>
-                                        <label>Usuario</label>
-                                        <input type="text" name="usuario" value=<?php echo $row['Usuario_orga'] ?>>
-                                        <br>
-                                        <label>movil</label>
-                                        <input type="text" name="movil" value=<?php echo $row['Mov_orga'] ?>>
-                                        <br> 
-                                        <label>Telefono</label>
-                                        <input type="text" name="telefono" value=<?php echo $row['Tel_orga'] ?>>
-                                        <br>  
-                                        <label>correo</label>
-                                        <input type="text" name="correo" value=<?php echo $row['Corr_orga'] ?>>
-                                        <br>
-                                        <label>Direccion</label>
-                                        <input type="text" name="direccion" value=<?php echo $row['Dire_orga'] ?>>
-                                        <br> 
-                                        <label>Profesion</label>
-                                        <input type="text" name="profesion" value=<?php echo $row['Profe_orga'] ?>>
-                                        <br> 
-                                        <label>Experiencia</label>
-                                        <input type="text" name="experiencia" value=<?php echo $row['Expe_orga'] ?>>
-                                        <br> 
-                                        <label>Edad</label>
-                                        <input type="text" name="edad" value=<?php echo $row['Edad_orga'] ?>>
-                                        <br> 
-                                        <label>Sexo</label>
-                                        <select name="sexo">
+
+                                        <div class="form-group">
+                                        <label class="col-form-label">Documento</label>
+                                        <input class="form-control" type="text" name="documento" value=<?php echo $row['Id_orga']?>>
+                                        </div>
+
+                                        <div class="form-group">
+                                        <label class="col-form-label">Nombre</label>
+                                        <input class="form-control" type="text" name="nombre" value=<?php echo $row['Nom_orga'] ?>>
+                                        </div>
+
+                                        <div class="form-group">
+                                        <label class="col-form-label">Apellidos</label>
+                                        <input class="form-control" type="text" name="apellidos" value=<?php echo $row['Ape_orga'] ?>>
+                                        </div>
+
+                                        <div class="form-group">
+                                        <label class="col-form-label">Usuario</label>
+                                        <input class="form-control" type="text" name="usuario" value=<?php echo $row['Usuario_orga'] ?>>
+                                        </div>
+
+                                        <div class="form-group">
+                                        <label class="col-form-label">Móvil</label>
+                                        <input class="form-control" type="text" name="movil" value=<?php echo $row['Mov_orga'] ?>>
+                                        </div>
+
+                                        <div class="form-group">
+                                        <label class="col-form-label">Teléfono</label>
+                                        <input class="form-control" type="text" name="telefono" value=<?php echo $row['Tel_orga'] ?>>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                        <label class="col-form-label">Correo</label>
+                                        <input class="form-control" type="text" name="correo" value=<?php echo $row['Corr_orga'] ?>>
+                                        </div>
+
+                                        <div class="form-group">
+                                        <label class="col-form-label">Dirección</label>
+                                        <input class="form-control" type="text" name="direccion" value=<?php echo $row['Dire_orga'] ?>>
+                                        </div>
+
+                                        <div class="form-group">
+                                        <label class="col-form-label">Profesión</label>
+                                        <input class="form-control" type="text" name="profesion" value=<?php echo $row['Profe_orga'] ?>>
+                                        </div>
+
+                                        <div class="form-group">
+                                        <label class="col-form-label">Experiencia</label>
+                                        <input class="form-control" type="text" name="experiencia" value=<?php echo $row['Expe_orga'] ?>>
+                                        </div>
+
+                                        <div class="form-group">
+                                        <label class="col-form-label">Edad</label>
+                                        <input class="form-control" type="text" name="edad" value=<?php echo $row['Edad_orga'] ?>>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                        <label class="col-form-label">Sexo</label>
+                                        <select class="form-control" name="sexo">
                                             <?php
                                             if ($row['Sexo_orga']=="Hombre"){
                                                 ?>
@@ -286,9 +255,10 @@
                                             }
                                             ?>
                                         </select>
-                                        <br> 
+                                        </div>
+                                        
                                         <button type="submit" class="btn btn-primary">Actualizar</button>
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>       
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>       
                                         
                                         </form>
                                         
@@ -302,6 +272,32 @@
 
                     </tbody>
                 </table>
+
+        </div>
+    </div>
+
+    <!-- <div class="d-flex" id="conten-prin"> -->
+        <!-- Sidebar -->
+        <!-- <div id="sidebar-container" class="col-3">
+            <div class="col-3 d-none d-lg-block">
+                <img src="../../img/isologo-blan.png" alt="">
+            </div>
+            <div class="menu">
+                <a href="../asistente/form_asistente.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-apps lead mr-2"></i><h5 class="m-1 navbar-enlaces">Asistente</h5></a>
+                <a href="../empleado_guia/form_empleado.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-people lead mr-2"></i><h5 class="m-1 navbar-enlaces">Empleado guia</h5></a>
+                <a href="form_organizador.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-stats lead mr-2"></i><h5 class="m-1 navbar-enlaces">organizador</h5></a>
+                <a href="../proveedor/form_proveedor.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-person lead mr-2"></i><h5 class="m-1 navbar-enlaces">proveedor</h5></a>
+                <a href="../sitio/form_sitio.php" class="d-flex text-light p-3 border-0"> <i class="icon ion-md-settings lead mr-2"></i>
+                    <h5 class="m-1 navbar-enlaces">Sitio Turistico</h5>
+                </a>
+                <a href=""></a>
+
+            </div>
+        </div> -->
+
+
+
+        
 
         </div>
     </div>

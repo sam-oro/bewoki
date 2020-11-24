@@ -126,21 +126,32 @@
                                         <div class="modal-body">
                                             <form action="actualizar_asistente.php" method="POST">
                                                 <input type="text" name="id" value=<?php echo $row['_id']['$oid']?> hidden>
-                                                <br>
-                                                <label>documento</label>
-                                                <input type="text" name="documento" value=<?php echo $row['documento']?> disabled>
-                                                <br>
-                                                <label>nombre</label>
-                                                <input type="text" name="nombre" value=<?php echo $row['Nombre'] ?>>
-                                                <br>
-                                                <label>movil</label>
-                                                <input type="text" name="movil" value=<?php echo $row['movil'] ?>>
-                                                <br>  
-                                                <label>correo</label>
-                                                <input type="text" name="correo" value=<?php echo $row['correo'] ?>>
-                                                <br>
-                                                <button type="submit" class="btn btn-primary">Actualizar</button>
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>     
+                                                
+                                                <div class="form-group">
+                                                    <label class="col-form-label">Documento: </label>
+                                                    <input class="form-control" type="text" name="documento" value=<?php echo $row['documento']?> disabled>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="col-form-label">Nombre: </label>
+                                                    <input class="form-control" type="text" name="nombre" value=<?php echo $row['Nombre'] ?>>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="col-form-label">Móvil: </label>
+                                                    <input class="form-control" type="text" name="movil" value=<?php echo $row['movil'] ?>>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="col-form-label">Correo: </label>
+                                                    <input class="form-control" type="text" name="correo" value=<?php echo $row['correo'] ?>>
+                                                </div>
+
+                                                <div class="form-group col-12 text-center">
+                                                    <button type="submit" class="btn btn-primary">Actualizar</button>
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button> 
+                                                </div>
+                                                    
                                             </form>
                                         </div>
                                     </div>

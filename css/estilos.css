@@ -63,6 +63,10 @@ b {
     color: #ffffff;
 }
 
+.bg-dark {
+    background-color: #1A1A1A !important;
+}
+
 
 /* Index */
 
@@ -261,10 +265,9 @@ nav a:hover {
 
 .contenedor {
     margin: 0;
-    padding: 0 1rem;
+    padding: 0;
     justify-content: center;
     align-items: center;
-    display: flex;
 }
 
 .tarjeta {

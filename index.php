@@ -142,7 +142,7 @@ session_start();
         <section class="container">
             <div class="que_es">
                 <div class="titulos">
-                    <h1>Que es Bewoki</h1>
+                    <h1>¿Qué es Bewoki?</h1>
                 </div>
                 <div class="contenido_que">
                     <div class="row fila_cont">
