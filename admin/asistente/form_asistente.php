@@ -7,7 +7,7 @@
         if($_SESSION['rol'] !=1 ){
             header('location: ../../vistas/usuario/iniciar_sesion.php');
         }else{
-            include '../../includes/header_admin.php';
+            //include '../../includes/header_admin.php';
         }
     }
 ?>
@@ -36,13 +36,13 @@
 
 <body>
 
-    <div class="d-flex" id="conten-prin">
-        <!-- Sidebar -->
-        <div id="sidebar-container" class="col-3">
-            <div class="col-3 d-none d-lg-block">
-                <img src="../../img/isologo-blan.png" alt="">
-            </div>
-            <div class="menu">
+        <div class="contenedor col-12">
+            <div class="row col-12">
+                <div class="col-3 col-md-3 bg-dark" style="min-height: 100vh;">
+                    <div class="col-12 d-none d-lg-block text-center mb-5">
+                        <img src="../../img/isologo-blan.png" class="mt-3" style="width: 60%;">
+                    </div>
+            <div class="menu col-12">
                 <a href="form_asistente.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-apps lead mr-2" title="Asistente"></i><h5 class="m-1 navbar-enlaces">Asistente</h5></a>
                 <a href="../empleado_guia/form_empleado.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-people lead mr-2" title="Empleado guía"></i><h5 class="m-1 navbar-enlaces">Empleado guía</h5></a>
                 <a href="../organizador_tour/form_organizador.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-stats lead mr-2" title="Organizador"></i><h5 class="m-1 navbar-enlaces">Organizador</h5></a>
@@ -82,7 +82,9 @@
 
             </form>
 
-            <table class="table">
+
+            <div class="table-over">
+            <table class="table mt-5">
                 <thead>
                     <tr>
                         <th>documento</th>
@@ -162,7 +164,7 @@
                     ?> 
                 </tbody> 
             </table>
-
+            </div>
         </div>
     </div>  
 

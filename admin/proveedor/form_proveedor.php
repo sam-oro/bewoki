@@ -35,7 +35,7 @@
     <div class="d-flex" id="conten-prin">
         <!-- Sidebar -->
         <div id="sidebar-container" class="col-3">
-            <div class="col-3 d-none d-lg-block">
+            <div class="col-3 d-none d-lg-block mb-5">
                 <img src="../../img/isologo-blan.png" alt="">
             </div>
             <div class="menu">
@@ -89,6 +89,7 @@
         <button type="submit" class="btn btn-color">Enviar</button>
         </div>
         </form>
+        <div class="table-over">
         <table class="table">
             <thead>
                 <tr>
@@ -123,6 +124,7 @@
                 ?>
                 </tbody>
                 </table>
+                </div>
         </div>
     </div>
 

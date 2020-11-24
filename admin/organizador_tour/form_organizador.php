@@ -35,15 +35,15 @@
     <div class="contenedor col-12">
         <div class="row col-12">
             <div class="col-3 col-md-3 bg-dark" style="min-height: 100vh;">
-                <div class="col-12 d-none d-lg-block text-center">
-                    <img src="../../img/isologo-blan.png" class="mt-3" style="width: 90%;">
+                <div class="col-12 d-none d-lg-block text-center mb-5">
+                    <img src="../../img/isologo-blan.png" class="mt-3" style="width: 60%;">
                 </div>
 
                 <div class="menu col-12">
                     <a href="../asistente/form_asistente.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-apps lead mr-2"></i><h5 class="m-1 navbar-enlaces">Asistente</h5></a>
                     <a href="../empleado_guia/form_empleado.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-people lead mr-2"></i><h5 class="m-1 navbar-enlaces">Empleado guia</h5></a>
-                    <a href="form_organizador.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-stats lead mr-2"></i><h5 class="m-1 navbar-enlaces">organizador</h5></a>
-                    <a href="../proveedor/form_proveedor.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-person lead mr-2"></i><h5 class="m-1 navbar-enlaces">proveedor</h5></a>
+                    <a href="form_organizador.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-stats lead mr-2"></i><h5 class="m-1 navbar-enlaces">Organizador</h5></a>
+                    <a href="../proveedor/form_proveedor.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-person lead mr-2"></i><h5 class="m-1 navbar-enlaces">Proveedor</h5></a>
                     <a href="../sitio/form_sitio.php" class="d-flex text-light p-3 border-0"> <i class="icon ion-md-settings lead mr-2"></i>
                         <h5 class="m-1 navbar-enlaces">Sitio Turistico</h5>
                     </a>
@@ -111,7 +111,8 @@
                     </div>
                 </form>
 
-                <table class="table" style="overflow: scroll;">
+                <div class="table-over">
+                <table class="table-over mt-5">
             <thead>
                 <tr>
                 <th>Nombre</th>
@@ -272,6 +273,8 @@
 
                     </tbody>
                 </table>
+
+                </div>
 
         </div>
     </div>
