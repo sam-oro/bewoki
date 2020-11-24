@@ -40,7 +40,7 @@
             <div class="row col-12">
                 <div class="col-3 col-md-3 bg-dark" style="min-height: 100vh;">
                     <div class="col-12 d-none d-lg-block text-center mb-5">
-                        <img src="../../img/isologo-blan.png" class="mt-3" style="width: 60%;">
+                    <a href="../../index.php"><img src="../../img/isologo-blan.png" class="mt-3" style="width: 60%;"></a>
                     </div>
             <div class="menu col-12">
                 <a href="form_asistente.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-apps lead mr-2" title="Asistente"></i><h5 class="m-1 navbar-enlaces">Asistente</h5></a>
