@@ -353,7 +353,7 @@ nav a:hover {
 #pl-img {
     height: 1.8rem;
     fill: #009AC5;
-}
+} 
 
 @media only screen and (max-width: 800px) {
     .pl-txt {

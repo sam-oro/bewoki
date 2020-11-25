@@ -12,7 +12,7 @@
     }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -32,6 +32,8 @@
 
     <!-- Ionic icons -->
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <title>Sitio</title>
 </head>
 <body>
 
@@ -57,16 +59,20 @@
             <h3>Sitio Turístico</h3>
         <form action="guardar_sitio.php" method="POST" class="col-12" name="add_form">
         <div class="form-group">
-            <label>Nombre</label>
+            <label>Nombre:</label>
             <input type="text" class="form-control" name="nombre" id="nombre">
         </div>
         <div class="form-group">
-            <label>Teléfono</label>
+            <label>Teléfono:</label>
             <input type="text" class="form-control" name="telefono" id="telefono">
         </div>
         <div class="form-group">
-            <label>Correo</label>
+            <label>Correo:</label>
             <input type="email" class="form-control" name="correo" id="correo">
+        </div>
+        <div class="form-group">
+            <label>Descripción del sitio:</label>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="7" class="form-control" placeholder="Descripción del sitio"></textarea>
         </div>
         <div class="form-group">
             <h3>Ubicación</h3>
@@ -74,6 +80,8 @@
             <input type="text" class="form-control" name="latitud" id="latitud">
             <label>Longitud:</label>
             <input type="text" class="form-control" name="longitud" id="longitud">
+            <label>Imagen:</label>
+            <input class="form-control" type="text" name="imagen" id="imagen">
         </div>
         <div class="text-center">
         <button type="button" class="btn btn-color">Enviar</button>
@@ -86,7 +94,7 @@
                 <th>Nombre del sitio</th>
                 <th>Teléfono</th>
                 <th>Correo</th>
-                <th>latitud</th>
+                <th>Latitud</th>
                 <th>Longitud</th>
                 <th></th>
             </thead>
@@ -109,6 +117,7 @@
                     echo '<td>'. $row['Corr_sitio']. '</td>' ;
                     echo '<td>'. $row['Lat_sitio']. '</td>' ;
                     echo '<td>'. $row['Lon_sitio']. '</td>' ;
+                    //echo('<img class="img" src="'.$row['imagen'].'" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></img>');
                     ?>
                     <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal<?php echo $con; ?>" id="ingresar">Editar</button></td>
                     <?php

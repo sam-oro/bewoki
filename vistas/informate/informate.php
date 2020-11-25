@@ -23,7 +23,7 @@ session_start();
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -43,65 +43,70 @@ session_start();
 </head>
 <body>
 
+
+    <?php
+        $baseDeDatos = obtenerBaseDeDatos();
+        $coleccion = $baseDeDatos->Sitio_Turistico;
+        $cursor = $coleccion->find();
+
+
+        
+    ?>
     <section>
         <div class="container">
-            <div class="text-center col-12 my-4">
-                <h1>Lugares recomendados</h1>
-            </div>
             <div class="row col-md-12">
+                <?php
+                foreach ($cursor as $doc){
+                    $row=json_decode(json_encode($doc),true);
+                ?>
+                
                 <div class="card text-center tarjeta col-md-6">
+                <a href="vista-card/vista-card.php" style="text-decoration: none">
                     <div class="card-header">
                         Lugar Turistico
                     </div>
-                    <div class="card-body bg-info" style="background-image: url( '../../img/pexels-tobi-518557.jpg')">
-                        <h3 class="card-title ">Titulo del lugar</h3>
-                        <!-- <p class="card-text ">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="# " class="btn btn-primary ">Go somewhere</a> -->
+                    <div class="card-body bg-info" style="background-image: url( <?php echo $row['imagen'] ?>)">
+                        <h3 class="card-title ">
+                        <?php
+                            echo $row['Nom_sitio'] ;
+                        ?>
+                        </h3>
                     </div>
-                    <div class="card-footer text-muted ">
+                    <div class="card-footer text-muted">
                         Ubicación
                     </div>
+                    </a>
                 </div>
-                <div class="card text-center tarjeta col-md-6">
-                    <div class="card-header">
-                        Lugar Turistico
-                    </div>
-                    <div class="card-body bg-info" style="background-image: url( '../../img/pexels-tobi-518557.jpg')">
-                        <h3 class="card-title ">Titulo del lugar</h3>
-                        <!-- <p class="card-text ">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="# " class="btn btn-primary ">Go somewhere</a> -->
-                    </div>
-                    <div class="card-footer text-muted ">
-                        Ubicación
-                    </div>
-                </div>
+                
+    <?php
+            
+        }
+    ?>
+
             </div>
         </div>
     </section>
 
-    <section>
 
-        <div class=" container">
-            <div class="text-center col-12 my-4">
-                <h1>Lugares </h1>
-            </div>
-            <div class="row col-md-12">
-                <div class="card text-center tarjeta col-md-6">
-                    <div class="card-header">
-                        Lugar Turistico
-                    </div>
-                    <div class="card-body bg-info" style="background-image: url( '../../img/pexels-tobi-518557.jpg')">
-                        <h3 class="card-title ">Titulo del lugar</h3>
-                        <!-- <p class="card-text ">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="# " class="btn btn-primary ">Go somewhere</a> -->
-                    </div>
-                    <div class="card-footer text-muted ">
-                        Ubicación
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <footer class="footer mt-4">
         <div class="container">
