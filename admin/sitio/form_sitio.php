@@ -72,7 +72,7 @@
         </div>
         <div class="form-group">
             <label>Descripción del sitio:</label>
-            <textarea name="descripcion" id="descripcion" cols="30" rows="7" class="form-control" placeholder="Descripción del sitio"></textarea>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="7" class="form-control"></textarea>
         </div>
         <div class="form-group">
             <h3>Ubicación</h3>
@@ -96,6 +96,7 @@
                 <th>Correo</th>
                 <th>Latitud</th>
                 <th>Longitud</th>
+                <th>descripcion</th>
                 <th></th>
             </thead>
 
@@ -117,6 +118,7 @@
                     echo '<td>'. $row['Corr_sitio']. '</td>' ;
                     echo '<td>'. $row['Lat_sitio']. '</td>' ;
                     echo '<td>'. $row['Lon_sitio']. '</td>' ;
+                    echo '<td>'. $row['descripcion']. '</td>' ;
                     //echo('<img class="img" src="'.$row['imagen'].'" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></img>');
                     ?>
                     <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal<?php echo $con; ?>" id="ingresar">Editar</button></td>
@@ -136,20 +138,26 @@
                                     <form action="actualizar_sitio.php" method="POST">
                                         <input type="text" name="id" value=<?php echo $row['_id']['$oid']?> hidden>
                                         <br>
-                                        <label>Nombre</label>
+                                        <label>Nombre:</label>
                                         <input class="form-control" type="text" name="nombre" value="<?php echo $row['Nom_sitio'] ?>">
                                         <br>
-                                        <label>Teléfono</label>
+                                        <label>Teléfono:</label>
                                         <input class="form-control" type="text" name="tel" value="<?php echo $row['Tel_sitio'] ?>">
                                         <br>
-                                        <label>Correo</label>
+                                        <label>Correo:</label>
                                         <input class="form-control" type="text" name="correo" value="<?php echo $row['Corr_sitio']?>">
                                         <br>
-                                        <label>Latitud</label>
+                                        <label>Descripción del sitio:</label>
+                                        <textarea type="text" name="descripcion" id="descripcion" cols="30" rows="7" class="form-control"><?php echo $row['descripcion']; ?></textarea>
+                                        <br>
+                                        <label>Latitud:</label>
                                         <input class="form-control" type="text" name="lat" value=<?php echo $row['Lat_sitio'] ?>>
                                         <br>  
-                                        <label>Longitud</label>
+                                        <label>Longitud:</label>
                                         <input class="form-control" type="text" name="long" value=<?php echo $row['Lon_sitio'] ?>>
+                                        <br>
+                                        <label>Imagen:</label>
+                                        <input class="form-control" type="text" name="imagen" value=<?php echo $row ['imagen'] ?>>
                                         <br>
                                         <button type="submit" class="btn btn-primary">Actualizar</button>
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>     

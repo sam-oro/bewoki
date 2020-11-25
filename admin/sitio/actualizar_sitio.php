@@ -7,6 +7,8 @@ $tel=$_POST['tel'];
 $correo=$_POST['correo'];
 $cel=$_POST['lat'];
 $cont=$_POST['long'];
+$imagen=$_POST['imagen'];
+$descripcion=$_POST['descripcion'];
 
 
 $baseDeDatos = obtenerBaseDeDatos();
@@ -23,6 +25,8 @@ $resultado = $coleccion->updateOne(
             'Corr_sitio' => $correo,
             'Lat_sitio' => $cel,
             'Lon_sitio' => $cont,
+            "imagen" => $imagen,
+            "descripcion" => $descripcion,
         ],
     ]
 );

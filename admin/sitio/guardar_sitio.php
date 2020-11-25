@@ -7,6 +7,7 @@
     $longitud = $_POST['longitud'];
     $correo = $_POST['correo'];
     $imagen=$_POST['imagen'];
+    $descripcion=$_POST['descripcion'];
 
     $baseDeDatos = obtenerBaseDeDatos();
     # Acceder a la colección contactos
@@ -18,6 +19,7 @@
         "Lat_sitio" => $latitud ,
         "Lon_sitio" => $longitud ,
         "imagen" => $imagen,
+        "descripcion" => $descripcion,
         
     ]);
     //echo "<script> 	alert ('Ingresado con exito'); </script>";
