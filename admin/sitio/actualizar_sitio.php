@@ -27,9 +27,9 @@ $resultado = $coleccion->updateOne(
     ]
 );
 
-echo "<script> alert('actualizado copn exito') </script>";
+//echo "<script> alert('actualizado copn exito') </script>";
 
-echo "<script> location.href='form_sitio.php'; </script>";
+echo "<script> location.href='form_sitio.php?msg=2'; </script>";
 
 
 ?>

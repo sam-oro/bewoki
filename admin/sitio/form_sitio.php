@@ -27,6 +27,9 @@
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Muli:300,700&display=swap" rel="stylesheet">
 
+    <!-- Sweet alerts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
     <!-- Ionic icons -->
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 </head>
@@ -52,28 +55,28 @@
         </div>
         <div class="container formularios col-9">
             <h3>Sitio Turístico</h3>
-        <form action="guardar_sitio.php" method="POST" class="col-12">
+        <form action="guardar_sitio.php" method="POST" class="col-12" name="add_form">
         <div class="form-group">
             <label>Nombre</label>
-            <input type="text" class="form-control" name="nombre">
+            <input type="text" class="form-control" name="nombre" id="nombre">
         </div>
         <div class="form-group">
             <label>Teléfono</label>
-            <input type="text" class="form-control" name="telefono">
+            <input type="text" class="form-control" name="telefono" id="telefono">
         </div>
         <div class="form-group">
             <label>Correo</label>
-            <input type="email" class="form-control" name="correo">
+            <input type="email" class="form-control" name="correo" id="correo">
         </div>
         <div class="form-group">
-            <h3>Úbicacion</h3>
+            <h3>Ubicación</h3>
             <label>Latitud:</label>
-            <input type="text" class="form-control" name="latitud">
+            <input type="text" class="form-control" name="latitud" id="latitud">
             <label>Longitud:</label>
-            <input type="text" class="form-control" name="longitud">
+            <input type="text" class="form-control" name="longitud" id="longitud">
         </div>
         <div class="text-center">
-        <button type="submit" class="btn btn-color">Enviar</button>
+        <button type="button" class="btn btn-color">Enviar</button>
         </div>
         </form>
         <div class="table-over">
@@ -81,7 +84,7 @@
             <thead>
                 <tr>
                 <th>Nombre del sitio</th>
-                <th>Telefono</th>
+                <th>Teléfono</th>
                 <th>Correo</th>
                 <th>latitud</th>
                 <th>Longitud</th>
@@ -125,22 +128,22 @@
                                         <input type="text" name="id" value=<?php echo $row['_id']['$oid']?> hidden>
                                         <br>
                                         <label>Nombre</label>
-                                        <input type="text" name="nombre" value="<?php echo $row['Nom_sitio'] ?>">
+                                        <input class="form-control" type="text" name="nombre" value="<?php echo $row['Nom_sitio'] ?>">
                                         <br>
-                                        <label>Telefono</label>
-                                        <input type="text" name="tel" value="<?php echo $row['Tel_sitio'] ?>">
+                                        <label>Teléfono</label>
+                                        <input class="form-control" type="text" name="tel" value="<?php echo $row['Tel_sitio'] ?>">
                                         <br>
                                         <label>Correo</label>
-                                        <input type="text" name="correo" value="<?php echo $row['Corr_sitio']?>">
+                                        <input class="form-control" type="text" name="correo" value="<?php echo $row['Corr_sitio']?>">
                                         <br>
                                         <label>Latitud</label>
-                                        <input type="text" name="lat" value=<?php echo $row['Lat_sitio'] ?>>
+                                        <input class="form-control" type="text" name="lat" value=<?php echo $row['Lat_sitio'] ?>>
                                         <br>  
                                         <label>Longitud</label>
-                                        <input type="text" name="long" value=<?php echo $row['Lon_sitio'] ?>>
+                                        <input class="form-control" type="text" name="long" value=<?php echo $row['Lon_sitio'] ?>>
                                         <br>
                                         <button type="submit" class="btn btn-primary">Actualizar</button>
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>     
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>     
                                     </form>
                                 </div>
                             </div>
@@ -160,4 +163,33 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="validaciones.js"></script>
+
+    <?php
+        if(isset($_GET['msg'])){
+            if($_GET['msg']==1){
+        ?>
+    
+
+        <script>
+            swal.fire({
+                icon: 'success',
+                text: 'Ingresado con exito',
+                });
+        </script>
+
+        <?php  }else{
+            if($_GET['msg']==2){
+            ?> 
+        <script>
+            swal.fire({
+                icon: 'success',
+                text: 'Actualizado con exito',
+                });
+        </script> 
+            <?php
+            } 
+        }
+        } ?>
 </body>  

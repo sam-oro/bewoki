@@ -20,7 +20,7 @@ $baseDeDatos = obtenerBaseDeDatos();
         "correo" => $correo ,
         
     ]);
-    echo "<script> 	alert ('Ingresado con exito'); </script>";
-    echo "<script> 	location.href='form_asistente.php'; </script>";
+    //echo "<script> 	alert ('Ingresado con exito'); </script>";
+    echo "<script> 	location.href='form_asistente.php?msg=1'; </script>";
 
 ?>

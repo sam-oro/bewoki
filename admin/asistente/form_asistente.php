@@ -31,6 +31,9 @@
     <!-- Ionic icons -->
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 
+    <!-- Sweet alerts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
     <title>Asistente</title>
 </head>
 
@@ -52,32 +55,32 @@
             </div>
         </div>
         <div class="container formularios col-9">
-            <form action="guardar_asistente.php" method="POST" class="col-12">
+            <form action="guardar_asistente.php" method="POST" name="add_form" class="col-12">
                 <div>
                     <h3>Asistente</h3>
                 </div>
                 <div class="form-group">
                     <label>Identificación</label>
-                    <input type="text" class="form-control" name="id">
+                    <input type="text" class="form-control" name="id" id="id">
                 </div>
                 <div class="form-group">
                     <label>Nombre</label>
-                    <input type="text" class="form-control" name="nombre">
+                    <input type="text" class="form-control" name="nombre" id="nombre">
                 </div>
                 <div class="form-group">
                     <label>Contraseña</label>
-                    <input type="password" class="form-control" name="password">
+                    <input type="password" class="form-control" name="password" id="password">
                 </div>
                 <div class="form-group">
                     <label>Celular</label>
-                    <input type="text" class="form-control" name="celular">
+                    <input type="text" class="form-control" name="celular" id="celular">
                 </div>
                 <div class="form-group">
                     <label>Correo</label>
-                    <input type="email" class="form-control" name="correo">
+                    <input type="email" class="form-control" name="correo" id="correo">
                 </div>
                 <div class="text-center">
-                    <button type="submit" class="btn btn-color text-center">Enviar</button>
+                    <button type="button" class="btn btn-color text-center">Enviar</button>
                 </div>
 
             </form>
@@ -178,8 +181,36 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="validaciones.js"></script>
+
+        <?php
+        if(isset($_GET['msg'])){
+            if($_GET['msg']==1){
+        ?>
+    
+
+        <script>
+            swal.fire({
+                icon: 'success',
+                text: 'Ingresado con exito',
+                });
+        </script>
+
+        <?php  }else{
+            if($_GET['msg']==2){
+            ?> 
+        <script>
+            swal.fire({
+                icon: 'success',
+                text: 'Actualizado con exito',
+                });
+        </script> 
+            <?php
+            } 
+        }
+        } ?>
+
 </body>
 
 </html>
-
-

@@ -35,7 +35,7 @@ $baseDeDatos = obtenerBaseDeDatos();
         "Sexo_empleado" => $sexo,
         "Ciu_empleado" => $ciudad,
     ]);
-    echo "<script> 	alert ('Ingresado con exito'); </script>";
-    echo "<script> 	location.href='form_empleado.php'; </script>";
+    //echo "<script> 	alert ('Ingresado con exito'); </script>";
+    echo "<script> 	location.href='form_empleado.php?msg=1'; </script>";
 
 ?>
