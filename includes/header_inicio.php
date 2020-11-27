@@ -45,7 +45,7 @@
                     <a class="nav-link" href="<?php echo  $URL ?>vistas/informate/informate.php">Informate</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Eventos-Tour</a>
+                    <a class="nav-link" href="<?php echo $URL ?>vistas/eventos/eventos_tour.php">Eventos-Tour</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo  $URL ?>vistas/aliados/aliados.php">Aliados </a> </li> <li class="nav-item">

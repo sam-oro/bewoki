@@ -7,7 +7,6 @@
         if($_SESSION['rol'] !=1 ){
             header('location: ../../vistas/usuario/iniciar_sesion.php');
         }else{
-            include '../../includes/header_admin.php';
         }
     }
 ?>
@@ -42,7 +41,7 @@
                 <a href="../asistente/form_asistente.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-apps lead mr-2"></i><h5 class="m-1 navbar-enlaces">Asistente</h5></a>
                 <a href="../empleado_guia/form_empleado.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-people lead mr-2"></i><h5 class="m-1 navbar-enlaces">Empleado guia</h5></a>
                 <a href="../organizador_tour/form_organizador.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-stats lead mr-2"></i><h5 class="m-1 navbar-enlaces">organizador</h5></a>
-                <a href="form_proveedor.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-person lead mr-2"></i><h5 class="m-1 navbar-enlaces">proveedor</h5></a>
+                <a href="form_evento.php" class="d-flex text-light p-3 border-0"><i class="icon ion-md-person lead mr-2" title="Proveedor"></i><h5 class="m-1 navbar-enlaces">Eventos</h5></a>
                 <a href="../sitio/form_sitio.php" class="d-flex text-light p-3 border-0"> <i class="icon ion-md-settings lead mr-2"></i>
                     <h5 class="m-1 navbar-enlaces">Sitio Turistico</h5>
                 </a>
@@ -51,82 +50,31 @@
             </div>
         </div>
         <div class="container formularios col-9">
-            <h3>Proveedor</h3>
-        <form action="guardar_proveedor.php" method="POST" class="col-12">
+            <h3>Eventos Tour</h3>
+        <form action="guardar_evento.php" method="POST" class="col-12">
         <div class="form-group">
-            <label>Identificación</label>
-            <input type="text" class="form-control" name="id">
+            <label>Titulo</label>
+            <input type="text" class="form-control" name="titulo" id="titulo" required>
         </div>
         <div class="form-group">
-            <label>RUT</label>
-            <input type="text" class="form-control" name="rut">
+            <label>Descripción</label>
+            <input type="text" class="form-control" name="descripcion" id="descripcion" required>
         </div>
         <div class="form-group">
-            <label>Nombre</label>
-            <input type="text" class="form-control" name="nombre">
+            <label>Ciudad</label>
+            <input type="text" class="form-control" name="ciudad" id="ciudad" required>
         </div>
         <div class="form-group">
-            <label>Celular</label>
-            <input type="text" class="form-control" name="celular">
-        </div>
-        <div class="form-group">
-            <label>Teléfono</label>
-            <input type="text" class="form-control" name="telefono">
-        </div>
-        <div class="form-group">
-            <label>Correo</label>
-            <input type="email" class="form-control" name="correo">
-        </div>
-        <div class="form-group">
-            <label>Dirección</label>
-            <input type="text" class="form-control" name="direccion">
-        </div>
-        <div class="form-group">
-            <label>Ubicación</label>
-            <input type="text" class="form-control" name="ubicacion">
+            <label>Url Imagen</label>
+            <input type="text" class="form-control" name="imagen" id="imagen" required>
         </div>
         <div class="text-center">
         <button type="submit" class="btn btn-color">Enviar</button>
         </div>
         </form>
-        <div class="table-over">
-        <table class="table">
-            <thead>
-                <tr>
-                <th>Identificación</th>
-                <th>RUT</th>
-                <th>Nombre</th>
-                <th>celular</th>
-                <th>telefono</th>
-                <th>Direccion</th>
-                <th>Ubicacion</th>
-            </thead>
-
-            <tbody>
-            </tr>
-            <?php
-                $baseDeDatos = obtenerBaseDeDatos();
-                $coleccion = $baseDeDatos->Proveedor;
-                $cursor = $coleccion->find();
-
-                foreach ($cursor as $doc){
-                    $row=json_decode(json_encode($doc),true);
-                    echo '<tr>';
-                    echo '<td>'. $row['RUT_prove']. '</td>' ;
-                    echo '<td>'. $row['Nom_prove']. '</td>' ;
-                    echo '<td>'. $row['Mov_prove']. '</td>' ;
-                    echo '<td>'. $row['Tel_prove']. '</td>' ;
-                    echo '<td>'. $row['corr_prove']. '</td>' ;
-                    echo '<td>'. $row['Dire_prove']. '</td>' ;
-                    echo '</tr>';
-                    }
-
-                ?>
-                </tbody>
-                </table>
-                </div>
-        </div>
+        
     </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
