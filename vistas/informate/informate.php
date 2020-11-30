@@ -49,8 +49,7 @@ session_start();
         $coleccion = $baseDeDatos->Sitio_Turistico;
         $cursor = $coleccion->find();
 
-
-        
+        $con=0;
     ?>
     <section>
         <div class="container">
@@ -58,6 +57,7 @@ session_start();
                 <?php
                 foreach ($cursor as $doc){
                     $row=json_decode(json_encode($doc),true);
+                    $con++;
                 ?>
                 
                 <div class="card text-center tarjeta col-md-6">
@@ -86,27 +86,6 @@ session_start();
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <footer class="footer mt-4">
         <div class="container">

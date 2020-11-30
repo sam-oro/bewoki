@@ -79,7 +79,7 @@ session_start();
         <div class="container col-12 mt-2">
             <div class="row col-12">
                 <div class="col-12 col-md-6 order-2 order-md-1 mt-4 mt-md-0">
-                <h1 class="sbtitle">Descripcion</h1>
+                <h1 class="sbtitle">Descripción</h1>
                 <p><?php echo $row['descripcion'] ?></p>
 
                 </div>
@@ -94,19 +94,10 @@ session_start();
                     </form>
                 </div>
             </div>
-
         </div>
-
-
-    
-
-
-
-
-
     <script>
         function iniciarMap(){
-            var coord = {lat:6.1515305 ,lng: -75.6155851};
+            var coord = {lat:<?php echo $row['Lat_sitio'] ?> ,lng: <?php echo $row['Lon_sitio'] ?>};
             var map = new google.maps.Map(document.getElementById('map'),{
             zoom: 10,
             center: coord

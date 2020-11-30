@@ -152,6 +152,18 @@ b {
     border-radius: 0.5rem;
 }
 
+
+/* .dropdown-item:focus,
+.dropdown-item:hover {
+    color: #F4AE0E !important;
+} */
+
+
+/* .btn-invi.active,
+.btn-invi:hover {
+    color: #F4AE0E !important;
+} */
+
 nav img {
     width: 40%;
 }
@@ -175,6 +187,12 @@ nav a {
 nav a:hover {
     color: #F4AE0E !important;
 }
+
+
+/* #dropdownMenuButton {
+    background-color: #582b2b !important;
+    border: none !important;
+} */
 
 .dropdown-item:hover {
     background-color: #929292 !important;
@@ -218,6 +236,11 @@ nav a:hover {
 }
 
 
+/* .copy:hover {
+    text-shadow: 2px 2px 4px #000000;
+} */
+
+
 /* Vista - Conocenos */
 
 .conocenos img {
@@ -242,7 +265,10 @@ nav a:hover {
 }
 
 
-/* Material Turistico Y Card - Informate */
+/* Material Turistico */
+
+
+/* Card - Informate */
 
 .contenedor {
     margin: 0;
@@ -257,7 +283,7 @@ nav a:hover {
 }
 
 .bg-info {
-    height: 80vh;
+    height: 20rem;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -312,8 +338,6 @@ nav a:hover {
 .pl {
     margin-top: 1rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .pl ul:hover {
@@ -329,7 +353,7 @@ nav a:hover {
 #pl-img {
     height: 1.8rem;
     fill: #009AC5;
-}
+} 
 
 @media only screen and (max-width: 800px) {
     .pl-txt {
@@ -428,28 +452,4 @@ nav a:hover {
 
 .logo img {
     width: 60%;
-}
-
-
-/*eventos tour*/
-
-.bg-eventos {
-    background-image: url(../img/tour.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    height: 35vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.tit-event {
-    color: #ffffff;
-    text-shadow: 5px 5px 2px #00000085;
-}
-
-.tit-event h1 {
-    font-size: 4rem;
 }
