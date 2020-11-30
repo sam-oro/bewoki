@@ -29,7 +29,10 @@ session_start();
                         <?php
                             $baseDeDatos = obtenerBaseDeDatos();
                             $coleccion = $baseDeDatos->Sitio_Turistico;
-                            $cursor = $coleccion->find();
+                            $cursor = $coleccion->find(
+                                ["_id" => new MongoDB\BSON\ObjectId("$id")],
+                            );
+                            
 
                             $con=0;
 
