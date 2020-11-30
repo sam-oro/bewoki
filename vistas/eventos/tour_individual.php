@@ -69,10 +69,11 @@ session_start();
     <link rel="stylesheet" href="../../css/estilos.css">
 </head>
 <body>
+
                 <section>
                     <div class="contenedor col-12">
                         </div>
-                            <div class="card-body bg-info" style="background-image: url( <?php echo $row['imagen'] ?>)">
+                            <div class="bg-info" style="background-image: url( <?php echo $row['imagen'] ?>)">
                         </div>
                     </div>
                 </section>
@@ -92,7 +93,6 @@ session_start();
                 <h1 class="sbtitle">Descripcion</h1>
                 <p><?php echo $row['Descripcion'] ?></p>
                 
-
                 <div class="col-12 my-3 order-3">
                     <form action="" method="POST" name="add_form">
                         <h1 class="sbtitle">Comentarios</h1>

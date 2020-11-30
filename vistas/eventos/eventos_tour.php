@@ -42,6 +42,13 @@ session_start();
     <link rel="stylesheet" href="../../css/estilos.css">
 </head>
 <body>
+
+        <section class="bg-eventos">
+            <div class="text-center tit-event">
+            <h1>Eventos</h1>
+            </div>
+        </section>
+
         <div class="container">   
                 <table class="table mt-5">
                     <thead>

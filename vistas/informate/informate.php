@@ -61,7 +61,7 @@ session_start();
                 ?>
                 
                 <div class="card text-center tarjeta col-md-6">
-                <a href="vista-card/vista-card.php" style="text-decoration: none">
+                <a href="vista-card/vista-card.php?id2=<?php echo $row['_id']['$oid']?>" style="text-decoration: none">
                     <div class="card-header">
                         Lugar Turistico
                     </div>
@@ -73,7 +73,7 @@ session_start();
                         </h3>
                     </div>
                     <div class="card-footer text-muted">
-                        Ubicación
+                        <a href="vista-card/vista-card.php?id2=<?php echo $row['_id']['$oid']?>">Mas Informacion</a>
                     </div>
                     </a>
                 </div>

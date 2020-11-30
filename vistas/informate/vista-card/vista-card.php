@@ -21,7 +21,23 @@ session_start();
             }            
         }
 
+        $id=$_GET['id2'];
+
 ?>
+
+
+                        <?php
+                            $baseDeDatos = obtenerBaseDeDatos();
+                            $coleccion = $baseDeDatos->Sitio_Turistico;
+                            $cursor = $coleccion->find();
+
+                            $con=0;
+
+                            foreach ($cursor as $doc){
+                                $row=json_decode(json_encode($doc),true);
+                                $con++;
+                                }
+                            ?> 
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -44,23 +60,24 @@ session_start();
 
     <section>
         <div class="contenedor col-12"> 
-            <div class="row col-12 bg-info" style="background-image: url( '../../../img/bg-01.jpg')">
-                <h1 class="card-title">esternocleidomastoideo</h1>
+            <div class="row col-12 bg-info" style="background-image: url( '<?php echo $row['imagen'] ?>')">
+                <h1 class="card-title"><?php echo $row['Nom_sitio'] ?></h1>
             </div>
         
         </div>
+
     </section>
 
             <div class="row text-center">
                     <svg id="pl-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path id="pl-img" d="M256,0C148.48,0,61,87.48,61,195c0,42.55,13.44,82.98,38.9,116.9l144.08,194.051c0.36,0.47,0.91,0.65,1.31,1.07 c7.2,7.71,17.59,5.77,22.72-1.07C309.5,450.591,385.55,347.2,414.79,308.2c0,0,0.01-0.03,0.02-0.05l0.18-0.24 C438.55,274.81,451,235.77,451,195C451,87.48,363.52,0,256,0z M256,300.2c-57.89,0-105.2-47.31-105.2-105.2S198.11,89.8,256,89.8 S361.2,137.11,361.2,195S313.89,300.2,256,300.2z"/></svg>
-                    <h1 class="pl-txt">Antioquia</h1>
+                    <h1 class="pl-txt"><?php echo $row['Nom_sitio'] ?></h1>
             </div>
 
         <div class="container col-12 mt-2">
             <div class="row col-12">
                 <div class="col-12 col-md-6 order-2 order-md-1 mt-4 mt-md-0">
                 <h1 class="sbtitle">Descripcion</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p><?php echo $row['descripcion'] ?></p>
 
                 </div>
                 <div id="map" class="col-12 col-md-6 order-1 order-md-2">
