@@ -37,6 +37,14 @@ b {
     color: #009AC5;
 }
 
+p {
+    text-transform: none;
+}
+
+p:first-letter {
+    text-transform: uppercase;
+}
+
 .titulos {
     display: flex;
     justify-content: center;
@@ -57,7 +65,23 @@ b {
     height: 3.5rem;
 }
 
+.btn-color2 {
+    background-color: #009A37;
+    color: #ffffff;
+    border: none;
+    font-size: 1.3rem;
+    padding: 0.3rem 2rem;
+    border-radius: 0.5rem;
+    height: 2.5rem;
+}
+
 .btn-color:hover {
+    cursor: pointer;
+    background-color: #08b444;
+    color: #ffffff;
+}
+
+.btn-color2:hover {
     cursor: pointer;
     background-color: #08b444;
     color: #ffffff;
@@ -338,6 +362,8 @@ nav a:hover {
 .pl {
     margin-top: 1rem;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pl ul:hover {
@@ -348,12 +374,13 @@ nav a:hover {
     font-size: 2rem;
     color: #009AC5;
     text-transform: uppercase;
+    margin-top: 10px;
 }
 
 #pl-img {
     height: 1.8rem;
     fill: #009AC5;
-} 
+}
 
 @media only screen and (max-width: 800px) {
     .pl-txt {
@@ -440,7 +467,7 @@ nav a:hover {
     min-height: 100vh;
 }
 
-.logo {
+.logo-contac {
     margin-bottom: 3rem;
 }
 
@@ -450,6 +477,6 @@ nav a:hover {
     padding: 2rem;
 }
 
-.logo img {
-    width: 60%;
+.logo-contac img {
+    width: 40%;
 }

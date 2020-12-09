@@ -49,7 +49,7 @@ session_start();
             </div>
         </section>
 
-        <div class="container">   
+        <div class="container mb-5" style="overflow: scroll; height: 70vh;">   
                 <table class="table mt-5">
                     <thead>
                         <tr>
@@ -76,7 +76,7 @@ session_start();
                                 echo '<td>'. $row['Descripcion']. '</td>' ;
                                 echo '<td>'. $row['Ciudad']. '</td>' ;
                                 ?>
-                                <td><a href="tour_individual.php?id=<?php echo $row['_id']['$oid']?>">VER</a></td>
+                                <td><a href="tour_individual.php?id=<?php echo $row['_id']['$oid']?>"><button class="btn btn-color2">Ver</button></a></td>
                                 <?php
                                 echo '</tr>';
                                 ?>
@@ -97,7 +97,7 @@ session_start();
 
     
 
-    <footer class="footer mt-4>
+    <footer class="footer mt-5 fixed-md-bottom">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-3 text-lg-center text-center contac">

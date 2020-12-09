@@ -87,26 +87,26 @@ session_start();
         </div>
     </section>
 
-        <div class="container col-12 mt-2">
-            <div class="row col-12">
-                <div class="col-12 col-md-6 order-2 order-md-1 mt-4 mt-md-0">
-                <h1 class="sbtitle">Descripcion</h1>
-                <p><?php echo $row['Descripcion'] ?></p>
-                
-                <div class="col-12 my-3 order-3">
+        <div class="container col-12 mt-2">                
+                <div class="col-12 my-3">
                     <form action="" method="POST" name="add_form">
-                        <h1 class="sbtitle">Comentarios</h1>
-                        <textarea name="comentario" id="comentario" cols="60" rows="7" class="form-control" placeholder="Coloque su comentario"></textarea>
+
+                        <div class="col-12 text-center my-3">
+                            <h2>Descripcion</h2>
+                            <p><?php echo $row['Descripcion'] ?></p>
+                        </div>
+
+                        <div class="col-12 px-md-5">
+                            <h2 class="mt-5">Comentarios</h2>
+                            <textarea name="comentario" id="comentario" cols="60" rows="7" class="form-control" placeholder="Coloque su comentario"></textarea>
+                        </div>
+
+                        <div class="col-12 text-center my-3">
                         <button type="button" id="com" class="btn btn-color">Enviar</button>
+                        </div>
                     </form>
                 </div>
-            </div>
-
         </div>
-
-
-
-    
 
     <footer class="footer mt-4>
         <div class="container">

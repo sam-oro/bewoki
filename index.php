@@ -202,7 +202,7 @@ session_start();
             <div class="tarjetas">
                 <div class="row fila_cont">
                     <div class="col-md-3 col-sm-12 text-center">
-                        <a style="text-decoration: none;" href="#">
+                        <a style="text-decoration: none;" href="index.php">
                             <div class="vinculo">
                                 <img class="img_valores" src="img/index-icon-01.svg" alt="">
                                 <h3 class="titulo">Unete a la comunidad</h3>
@@ -210,7 +210,7 @@ session_start();
                         </a>
                     </div>
                     <div class="col-md-3 col-sm-12 text-center">
-                        <a style="text-decoration: none;" href="#">
+                        <a style="text-decoration: none;" href="vistas/contacto/contactenos.php">
                             <div class="vinculo">
                                 <img class="img_valores" src="img/index-icon-02.svg" alt="">
                                 <h3 class="titulo">Ayudados a mejorar</h3>
@@ -218,7 +218,7 @@ session_start();
                         </a>
                     </div>
                     <div class="col-md-3 col-sm-12 text-center">
-                        <a style="text-decoration: none;" href="#">
+                        <a style="text-decoration: none;" href="vistas/materialturistico/turistico.php">
                             <div class="vinculo">
                                 <img class="img_valores" src="img/index-icon-03.svg" alt="">
                                 <h3 class="titulo">Conoce Colombia</h3>

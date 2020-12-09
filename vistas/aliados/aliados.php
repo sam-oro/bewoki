@@ -59,6 +59,23 @@ session_start();
                 </div>
             </div>
         </div>
+
+        <div class="contenedor m-4 cards-info">
+            <div class="contenedor m-4 cards-info">
+                <div class="card" style="width: 18rem;">
+                    <img src="../../img/slid-02.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <h3 style="text-transform:uppercase;">Card title</h3>
+                        </div>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="text-center">
+                            <a href="#"><button class="btn btn-color">Ver aliado</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class="footer mt-4">

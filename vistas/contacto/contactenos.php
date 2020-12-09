@@ -24,7 +24,7 @@
     <div class="container m-0 p-0 col-12">
         <div class="form-veh col-12 col-md-6 col-lg-6">
             <form action="">
-                <div class="logo text-center col-12">
+                <div class="logo-contac text-center col-12">
                     <a href="../../index.php">
                         <img src="../../img/logo.png"  alt="">
                     </a>
@@ -32,28 +32,29 @@
 
                 <div class="form-row">
                     <div class="form-group col-12">
-                        <label for="#">Nombre</label>
+                        <label>Nombre</label>
                         <input type="text" class="form-control" id="">
                     </div>
 
                     <div class="form-group col-12">
-                        <label for="#">Correo</label>
+                        <label>Correo</label>
                         <input type="email" class="form-control" id="">
                     </div>
 
                     <div class="form-group col-12">
-                        <label for="#">Celular</label>
+                        <label>Celular</label>
                         <input type="text" class="form-control" id="">
                     </div>
 
                     <div class="form-group col-12">
-                        <label for="#">Asunto</label>
-                        <input type="text" class="form-control" id="">
+                        <label>Asunto</label>
+                        <textarea class="form-control" style="height: 8vh;"></textarea>
+                        
                     </div>
 
                     <div class="form-group col-12">
-                        <label for="">Comentario</label>
-                        <input type="tex-tarea" class="form-control">
+                        <label>Comentario</label>
+                        <textarea class="form-control" style="height: 12vh;"></textarea>
                     </div>
                 </div>
 
