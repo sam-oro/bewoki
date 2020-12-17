@@ -21,19 +21,19 @@
 </head>
 
 <body>
-    <main class="col-12">                
-        <div class="contenedor col-12 text-center">
-            <div class="row col-12">
-                <a class="navbar-brand" href="../../index.php">
+    <main class="col-12 bg-img login">                
+        <div class="contenedor col-4 text-center">
+            <div class="row col-12 frm-login">
+                <a class="navbar-brand login-logo" href="../../index.php">
                     <img src="../../img/logo.png" class="logo" alt="Logotipo">
                 </a>
                 <div class="col-12">
                     <form action="login.php" method="POST" class="formulario">
                         <h1 class="inicio">Iniciar Sesión</h1>
-                        <label for=""> Correo Electrónico</label>
-                        <input type="text" class="form-control" name ="usuario" placeholder="Introduce el correo electrónico">
-                        <label for="">Contraseña</label>
-                        <input type="password" class="form-control" name="password" placeholder="Introduce la contraseña">
+                        <label class="lbl-login"> Correo Electrónico</label>
+                        <input type="text" class="input-login" name ="usuario" placeholder="Introduce el correo electrónico">
+                        <label class="lbl-login">Contraseña</label>
+                        <input type="password" class="input-login" name="password" placeholder="Introduce la contraseña">
                         <span><a href="recuperacion/recuperar_con.php">¿Olvidaste tu contraseña?</a></span>
                         <br>
                         <button type="submit" class="btn btn-color" id="ingresar">INGRESAR </button>
@@ -43,26 +43,6 @@
         </div>
 
     </main>
-
-    <footer class="footer mt-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-3 text-lg-center text-center contac">
-                    <a href="#"></a>
-                    <h3 class="contach">Contáctenos</h3>
-                    </a>
-                </div>
-                <div class="col-lg-6 my-3 my-lg-0 text-lg-center text-center">
-                    <a class="redes btn btn-social mx-3" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="redes btn btn-social mx-3" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    <a class="redes btn btn-social mx-3" href="#!"><i class="fab fa-instagram"></i></a>
-                </div>
-                <div class="col-lg-3 text-lg-left text-center copy">©Bewoki2020</div>
-            </div>
-        </div>
-    </footer>
-
-
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous ">
     </script>

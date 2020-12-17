@@ -98,6 +98,11 @@ p:first-letter {
     margin: 3rem 0 5rem 0;
 }
 
+.centrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Index */
 
@@ -479,4 +484,39 @@ nav a:hover {
 
 .logo-contac img {
     width: 40%;
+}
+
+/* Login */
+.input-login{
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    border-bottom: 2px solid #009A37;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    outline: none;
+}
+
+.lbl-login{
+    display: flex;
+    justify-self: left;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.bg-img{
+    background-image: url(../img/bg2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.frm-login{
+    border-radius: 10px;
+    justify-content: center;
+    padding: 20px;
+    background-color:rgba(255, 255, 255, 0.856);
 }
