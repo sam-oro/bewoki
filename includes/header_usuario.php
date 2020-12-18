@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -57,7 +57,7 @@
                         Perfil
                     </button>
                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
-                        <button class="dropdown-item" type="button">Mi Perfil</button>
+                        <a class="nav-link" href="<?php echo  $URL ?>vistas/perfil/perfil.php"><button class="dropdown-item" type="button">Mi Perfil</button></a>
                         <button class="dropdown-item" type="button">Configuración</button>
                         <div class="dropdown-divider"></div>
                         <a class="nav-link" href="<?php echo  $URL ?>vistas/usuario/cerrar_sesion/cerrar_sesion.php"><button class="dropdown-item" type="button">Cerrar sesión</button></a>

@@ -1,3 +1,27 @@
+<?php
+
+include '../../admin/conexion/conexion.php';
+
+session_start();
+        if(!isset($_SESSION['rol'])){
+            include '../../includes/header_inicio.php';
+        }else{
+            if($_SESSION['rol'] !=1 ){
+                if($_SESSION['rol'] ==2 ){
+                    include '../../includes/header_usuario.php';
+                }else {
+                    if($_SESSION['rol']==3){
+                        include '../../includes/header_vendedor.php';
+                    }else {
+                        include '../../includes/header_inicio.php';
+                    } 
+                }
+            }else {
+                include '../../includes/header_admin.php';
+            }            
+        }
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -21,9 +45,6 @@
     <body>
         <div class="row">
             <main class="col-12">
-            <a class="navbar-brand" href="../../index.php">
-                    <img src="../../img/logo.png" class="logo" alt="Logotipo">
-                </a>
                 <div class="container text-center mt-4">
                     <div>
                         <h1 class="inicio">Mi Perfil</h1>
@@ -84,7 +105,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-3 text-lg-center text-center contac">
-                    <a href="#"></a>
+                    <a href="../contacto/contactenos.php">
                     <h3 class="contach">Contáctenos</h3>
                     </a>
                 </div>

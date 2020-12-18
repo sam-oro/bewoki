@@ -49,7 +49,7 @@ session_start();
             </div>
         </section>
 
-        <div class="container mb-5" style="overflow: scroll; height: 70vh;">   
+        <div class="container mb-5 tabla" style="overflow: scroll; height: 70vh;">   
                 <table class="table mt-5">
                     <thead>
                         <tr>
@@ -101,7 +101,7 @@ session_start();
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-3 text-lg-center text-center contac">
-                    <a href="#"></a>
+                    <a href="../contacto/contactenos.php">
                     <h3 class="contach">Contáctenos</h3>
                     </a>
                 </div>

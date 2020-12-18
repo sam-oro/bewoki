@@ -191,7 +191,7 @@ session_start();
                             <p class="texto"><b>Calidad:</b> Nos dedicamos a producir consistentemente resultados que cumplan y excedan las expectativas de nuestros clientes.</p>
                             <p class="texto"><b>Respeto:</b> Valoramos las marcas y sus productos, haciendo alianzas estratégicas con diferentes empresas del medio.</p>
                             <p class="texto"><b>Competitividad e innovación:</b> Constantemente ideamos proyectos para mejorar los procesos, producción y la calidad de los bienes o los servicios.</p>
-                            <p class="texto"><b>Goce y Disfrute:</b> Disfrutamos y nos gozamos cada uno de los proyectos que hacemos. Somos una empresa feliz.</p>
+                            <p class="texto"><b>Goce y disfrute:</b> Disfrutamos y nos gozamos cada uno de los proyectos que hacemos. Somos una empresa feliz.</p>
                         </div>
                     </div>
                 </div>
@@ -241,7 +241,7 @@ session_start();
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-3 text-lg-center text-center contac">
-                    <a href="#"></a>
+                    <a href="vistas/contacto/contactenos.php">
                     <h3 class="contach">Contáctenos</h3>
                     </a>
                 </div>

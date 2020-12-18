@@ -240,6 +240,10 @@ nav a:hover {
     padding: 2rem;
 }
 
+.footer a{
+    text-decoration: none;
+}
+
 .redes i {
     color: #4b4b4b;
     font-size: 1.5rem;
