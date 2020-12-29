@@ -41,29 +41,40 @@ session_start();
     <link rel="stylesheet" href="../../css/estilos.css">
 </head>
 <body>
-
-    <section class="container">
-        <div class="row col-md-12">
-
-            <div class="card text-center tarjeta col-md-4">
-                <div class="contenedor m-4 cards-info">
-                    <div class="contenedor m-4 cards-info">
-                        <div class="card" style="width: 18rem;">
-                            <img src="../../img/slid-02.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <div class="text-center">
-                                    <h3 style="text-transform:uppercase;">Card title</h3>
-                                </div>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <div class="text-center">
-                                    <a href="#"><button class="btn btn-color">Ver aliado</button></a>
-                                </div>
-                            </div>
-                        </div>
+    <section>
+        <div class="contenedor m-4 cards-info">
+            <div class="contenedor m-4 cards-info">
+                <div class="card" style="width: 18rem;">
+                    <img src="../../img/logosabaneta.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title-al">Municipio de Sabaneta</h4>
+                        <p class="card-text">Te invitamos a conocer nuestros productos de región, arte, cultural, eventos, comida y hermosos lugares, visitanos.</p>
+                        <a href="https://www.sabaneta.gov.co/" target="_blank" class="btn btn-color">Información</a>
                     </div>
                 </div>
             </div>
-            
+
+            <div class="contenedor m-4 cards-info">
+                <div class="card" style="width: 18rem;">
+                    <img src="../../img/logomedellin.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title-al">Municipio de Medellín</h4>
+                        <p class="card-text">Ciudad de la eterna primavera, diversión, cultura y buena comida, te esperamos.</p>
+                        <a href="https://www.medellin.gov.co/" target="_blank" class="btn btn-color">Información</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedor m-4 cards-info">
+                <div class="card" style="width: 18rem;">
+                    <img src="../../img/logorionegro.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title-al">Municipio de Rionegro</h4>
+                        <p class="card-text">Juntos Avanzamos, se parte de nuestras ofertas gastronómicas y culturales.</p>
+                        <a href="https://www.rionegro.gov.co/Paginas/default.aspx" target="_blank" class="btn btn-color">Información</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </section>

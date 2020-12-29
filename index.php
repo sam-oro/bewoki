@@ -29,7 +29,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Bewoki</title>
 </head>
 
 <!--importacion boostrap-->
@@ -147,7 +147,7 @@ session_start();
                 <div class="contenido_que">
                     <div class="row fila_cont">
                         <div class="col-md-6 col-sm-12">
-                            <h3 class="titulo">¿Quienes somos?</h3>
+                            <h3 class="titulo">¿Quiénes somos?</h3>
                             <p class="texto">Somos la comunidad digital para descubrir, emocionar y compartir experiencias y contenido saludable, seguro y sostenible en el territorio.</p>
                         </div>
                         <div class="col-md-6 col-sm-12">
@@ -205,7 +205,7 @@ session_start();
                         <a style="text-decoration: none;" href="index.php">
                             <div class="vinculo">
                                 <img class="img_valores" src="img/index-icon-01.svg" alt="">
-                                <h3 class="titulo">Unete a la comunidad</h3>
+                                <h3 class="titulo">Únete a la comunidad</h3>
                             </div>
                         </a>
                     </div>
@@ -213,7 +213,7 @@ session_start();
                         <a style="text-decoration: none;" href="vistas/contacto/contactenos.php">
                             <div class="vinculo">
                                 <img class="img_valores" src="img/index-icon-02.svg" alt="">
-                                <h3 class="titulo">Ayudados a mejorar</h3>
+                                <h3 class="titulo">Ayúdanos a mejorar</h3>
                             </div>
                         </a>
                     </div>

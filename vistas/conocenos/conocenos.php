@@ -28,7 +28,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conocenos</title>
+    <title>Conócenos</title>
 </head>
 
 <!--importacion boostrap-->
@@ -53,7 +53,7 @@ session_start();
                         <img src="../../img/iconos-01.svg" alt="">
                     </div>
                     <div class="col-md-6 col-sm-12">
-                        <h3 class="mb-md-5 my-lg-3 text-center">¿Quienes Somos?</h3>
+                        <h3 class="mb-md-5 my-lg-3 text-center">¿Quiénes Somos?</h3>
                         <p class="text-justify">Somos la comunidad digital para descubrir, emocionar y compartir experiencias y contenido saludable, seguro y sostenible en el territorio.</p>
                         <h3 class="mb-md-5 my-lg-3 text-center">¿Qué hacemos?</h3>
                         <p class="text-justify">Visibilizamos sobre el territorio y conectamos la oferta y demanda de contenido y experiencias turísticas, culturales, creativas, salud y bienestar.</p>
