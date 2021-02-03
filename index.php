@@ -218,7 +218,7 @@ session_start();
                         </a>
                     </div>
                     <div class="col-md-3 col-sm-12 text-center">
-                        <a style="text-decoration: none;" href="vistas/materialturistico/turistico.php">
+                        <a style="text-decoration: none;" href="vistas/eventos/eventos_tour.php">
                             <div class="vinculo">
                                 <img class="img_valores" src="img/index-icon-03.svg" alt="">
                                 <h3 class="titulo">Conoce Colombia</h3>

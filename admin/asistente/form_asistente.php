@@ -115,7 +115,7 @@
                             echo '<td>'. $row['movil']. '</td>' ;
                             echo '<td>'. $row['correo']. '</td>' ;
                             ?>
-                            <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal<?php echo $con; ?>" id="ingresar">Editar</button></td>
+                            <td><button type="button" class="btn btn-color" data-toggle="modal" data-target="#modal<?php echo $con; ?>" id="ingresar">Editar</button></td>
                             <?php
                             echo '</tr>';
                             ?>

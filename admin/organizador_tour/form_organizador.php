@@ -190,7 +190,7 @@
                                 <td>
                                     <button
                                         type="button"
-                                        class="btn btn-primary"
+                                        class="btn btn-color"
                                         data-toggle="modal"
                                         data-target="#modal<?php echo $con; ?>"
                                         id="ingresar">Editar</button>

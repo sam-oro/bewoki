@@ -240,8 +240,8 @@
                                             <label>Ciudad</label>
                                             <input class="form-control" type="text" name="ciudad" value=<?php echo $row['Ciu_empleado'] ?>>
                                             <br>
-                                            <button type="submit" class="btn btn-primary">Actualizar</button>
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>     
+                                            <button type="submit" class="btn btn-color">Actualizar</button>
+                                            <button type="button" class="btn btn-color" data-dismiss="modal">cerrar</button>     
                                         </form>
                                     </div>
                                 </div>
