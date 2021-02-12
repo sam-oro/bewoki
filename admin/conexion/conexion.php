@@ -12,5 +12,5 @@
     }
 
     // $URL = "http://localhost/bewoki/";
-    $URL = "http://localhost/bewoki/";
+    $URL = "http://localhost/GIT/bewoki/";
 ?>
